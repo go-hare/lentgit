@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>天猫</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		.a{
+			width: 200px;
+			height: 296px;
+			border-left: 20px dashed #fff;
+			border-right: 20px dashed #fff;
+			overflow: hidden;
+		}
+		.s{
+			width: 600px;
+			height: 296px;
+			background-color: #fff;
+		}
+		.d{
+			width: 200px;
+			height: 185px;
+		}
+		img{
+			width: 185px;
+			height: 185px;
+		}
+		h1{
+			font-size: 14px;
+			line-height: 20px;
+			height: 40px;
+			color: #666;
+		}
+		p{
+			font-size: 18px;
+			height: 20px;
+			line-height: 20px;
+			color: #ff0000;
+			text-align: center;
+		}
+		.d{
+			float: left;
+		}
+		.q{
+			width: 240px;
+			height: 30px;
+			background-color: #fff;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		span{
+			display: inline-block;
+			width: 20px;
+			height: 20px;
+			background-color: #eee;
+			border-radius: 50%;
+			margin: 10px;
+		}
+		.w{
+			background-color: #ff0000;
+		}
+		.s,span{
+			transition: all 1s;
+		}
+	</style>
+</head>
+<body>
+	<div class="a">
+		<div class="s">
+			<div class="d">
+				<img src="https://img.alicdn.com/bao/uploaded/i4/196993935/TB2sm8SJY5YBuNjSspoXXbeNFXa-196993935.png_400x400q60.jpg">
+				<h1>【设计师合作款】女装 灯芯绒印花裙 412443 优衣库UNIQLO</h1>
+				<p>$500.00</p>
+			</div>
+			<div class="d">
+				<img src="https://img.alicdn.com/bao/uploaded/bao/upload/TB1apTQRXXXXXcjaFXXwu0bFXXX.png_400x400q60.jpg">
+				<h1>美的正品大功率烫衣服挂烫机家用蒸汽小型手持电熨斗熨衣服熨烫机</h1>
+				<p>$1000.00</p>
+			</div>
+			<div class="d">
+				<img src="https://img.alicdn.com/bao/uploaded/bao/upload/TB1tXkiB9tYBeNjSspawu1OOFXa.png_400x400q60.jpg">
+				<h1>美的正品大功率烫衣服挂烫机家用蒸汽小型手持电熨斗熨衣服熨烫机</h1>
+				<p>$369.00</p>
+			</div>
+		</div>
+	</div>
+	<div class="q">
+		<span class="w"></span>
+		<span></span>
+		<span></span>
+	</div>
+	<script type="text/javascript">
+		var sDiv = document.querySelector(".s");
+		var span1 = document.querySelector("span:nth-of-type(1)");
+		var span2 = document.querySelector("span:nth-of-type(2)");
+		var span3 = document.querySelector("span:nth-of-type(3)");
+		function aD() {
+			sDiv.style.transform = "translateX(-200px)";
+			span1.className = "";
+			span2.className = "";
+			span3.className = "";
+			span2.className = "w";
+			
+		}
+		span2.onmouseover = aD;
+		function asD() {
+			sDiv.style.transform = "translateX(-400px)";
+			span1.className = "";
+			span2.className = "";
+			span3.className = "";
+			span3.className = "w";
+			
+		}
+		span3.onmouseover = asD;
+		function acD() {
+			sDiv.style.transform = "translateX(0px)";
+			span1.className = "";
+			span2.className = "";
+			span3.className = "";
+			span1.className = "w";
+			
+		}
+		span1.onmouseover = acD;
+	</script>
+
+</body>
+</html>

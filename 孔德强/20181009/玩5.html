@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>苏宁</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+	.a{
+		width: 200px;
+		height: 296px;
+		border-left: 20px dashed #fff;
+		border-right: 20px dashed #fff;
+		overflow: hidden;
+
+	}
+	.s{
+		width: 600px;
+		height: 296px;
+		background-color: #ddd;
+	}
+	.d{
+		width: 200px;
+		height: 185px;
+	}
+	img{
+		width: 185px;
+		height: 185px;
+	}
+	h1{
+		height: 40px;
+		line-height: 20px;
+		overflow: hidden;
+		white-space: nowrap;
+		font-size: 22px;
+		text-overflow: ellipsis;
+		color: #999;
+		font-weight: 100;
+	}
+	p{
+		height: 20px;
+		line-height: 20px;
+		font-size: 20px;
+		color: #ff0000;
+		text-align: center;
+	}
+	.d{
+		float: left;
+	}
+	.q{
+		width: 240px;
+		height: 30px;
+		background-color: #ee00ee;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	span{
+		display: inline-block;
+		width: 20px;
+		height: 20px;
+		background-color: #ddd;
+		border-radius: 50%;
+		margin: 8px;
+	}
+	.w{
+		background-color: #ff0000;
+	}
+	.d,span{
+		transition: all 1s;
+	}
+
+		
+	</style>
+</head>
+<body>
+	<div class="a">
+		<div class="s">
+			<div class="d">
+				<img src="https://img.alicdn.com/bao/uploaded/bao/upload/TB123NmAYSYBuNjSspfwu3ZCpXa.png_400x400q60.jpg">
+				<h1>维达经典有芯卷纸4层140克27卷整箱卫生纸巾 3层4层新旧随机发货</h1>
+				<p>$50.00</p>
+			</div>
+			<div class="d">
+				<img src="https://img.alicdn.com/bao/uploaded/i3/853154147/TB2i1dokFooBKNjSZPhXXc2CXXa_!!853154147.jpg_400x400q60.jpg">
+				<h1>九阳加热真空破壁料理机Y929养生豆浆全自动家用多功能辅食搅拌机</h1>
+				<p>$1299.00</p>
+			</div>
+			<div class="d">
+				<img src="https://img.alicdn.com/bao/uploaded/i4/880734502/TB2OeDRJMmTBuNjy1XbXXaMrVXa_!!880734502.png_400x400q60.jpg">
+				<h1>新品【三只松鼠_巨型零食大礼包】抖音一箱零食猪饲料网红送女友</h1>
+				<p>$188.00</p>
+			</div>
+
+		</div>
+		
+	</div>
+	<div class="q">
+		<span class="w"></span>
+		<span></span>
+		<span></span>
+	</div>
+	<script type="text/javascript">
+		var sDiv = document.querySelector(".s");
+		var span1 = document.querySelector("span:nth-of-type(1)");
+		var span2 = document.querySelector("span:nth-of-type(2)");
+		var span3 = document.querySelector("span:nth-of-type(3)");
+		function aD() {
+			sDiv.style.transform = "translateX(-200px)";
+			span1.className = "";
+			span2.className = "";
+			span3.className = "";
+			span2.className = "w";
+		}
+			span2.onmouseover = aD;
+			function asD() {
+			sDiv.style.transform = "translateX(-400px)";
+			span1.className = "";
+			span2.className = "";
+			span3.className = "";
+			span3.className = "w";
+		}
+			span3.onmouseover = asD;
+			function aaD() {
+			sDiv.style.transform = "translateX(0px)";
+			span1.className = "";
+			span2.className = "";
+			span3.className = "";
+			span1.className = "w";
+		}
+			span1.onmouseover = aaD;
+			
+		
+	</script>
+
+</body>
+</html>

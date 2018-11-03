@@ -1,0 +1,102 @@
+.logo{
+
+	width: 1920px;
+	height: 112px;
+	background-color: white;
+	margin-top: 1px;
+	background-color: #fff;
+}
+.logo1{
+	width: 1200px;
+	height: 112px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.logo1>img{
+	margin-top: 25px;
+	float: left;
+}
+.logo2{
+	width: 275px;
+	height: 112px;
+	padding-left: 12px;
+	float: left;
+	font-size: 30px;
+	line-height: 107px;
+	color: #4c4c4c;
+
+}
+.logo4{
+	width: 131px;
+	height: 112px;
+	float: left;
+}
+.logo3{
+		display: inline-block;
+		
+		font-size: 28px;
+		line-height: 107px;
+		color: #4c4c4c;
+		float: left;		
+
+}
+.logo3:hover{
+	display: inline-block;
+	color: #f52f3e;
+}
+.w2{
+	width: 32px;
+	height: 107px;
+	font-size: 35px;
+	color: #f52f3e;
+	line-height: 107px;
+	float: left;
+
+}
+.logo5{
+	width: 190px;
+	height: 112px;
+	line-height: 107px;
+	font-size: 25px;
+	color: #f52f3e;
+	float: right;
+
+}
+.logo5>.w2{
+	padding-right: 6px;
+	/*margin-right: 10px;*/
+/*	float: right;*/
+}
+.xx{
+	width: 1905px;
+	height: 345px;
+	border: 1px solid #ddd;
+	position: relative;
+
+
+
+}
+.xx1{
+	width: 1200px;
+	height: 160px;
+	/*background-color: #ddd;*/
+	position: absolute;
+	top: 100px;
+	left: 350px;
+
+}
+.xx2{
+	width: 800px;
+	height: 60px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #fff;
+}
+.xx3{
+	width: 680px;
+	height: 40px;
+	padding: 10px 20px;
+	line-height: 40px;
+	font-size: 16px;
+	color: #ddd;
+}

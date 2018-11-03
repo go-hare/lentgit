@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>京东</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+	div{
+		width: 238px;
+		height: 269px;
+		border: 1px dashed #000; 
+		position: relative;
+		
+
+	}
+	img{
+		width: 238px;
+		height: 269px;
+		position: absolute;
+	}
+	p{
+		width: 238px;
+		height: 30px;
+		/*background-color: #000;*/
+		position: absolute;
+		bottom: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	span{
+		display: inline-block;
+		width: 20px;
+		height: 20px;
+		background-color: #fff;
+		border-radius: 50%;
+		margin: 9px;
+	}
+	.q{
+		background-color: #ee0039;
+	}
+	img,span{
+		transition: all 1s;
+	}
+	.c{
+		position: absolute;
+		top: 100px;
+		left: 9px;
+		width: 30px;
+		height: 69px;
+		opacity: 0.4;
+		border-radius: 12.5px;
+	}
+	.v{
+		position: absolute;
+		top: 100px;
+		left: 220px;
+		width: 30px;
+		height: 69px;
+
+		opacity: 0.4;
+		border-radius: 12.5px;
+	}
+
+		
+	</style>
+	
+</head>
+<body>
+	<div>
+		<img src="https://img.alicdn.com/tfs/TB1kXdzdVzqK1RjSZFvXXcB7VXa-476-538.jpg_500x1000q75s0.jpg_.webp">
+		<img src="https://img.alicdn.com/tfs/TB1nwNxd9zqK1RjSZFjXXblCFXa-476-538.jpg_500x1000q75s0.jpg_.webp">
+		<img src="https://img.alicdn.com/tfs/TB1lWdyd9zqK1RjSZFpXXakSXXa-476-538.jpg_500x1000q75s0.jpg_.webp">
+		<img src="https://img.alicdn.com/tfs/TB1zehOd4jaK1RjSZFAXXbdLFXa-476-538.jpg_500x1000q75s0.jpg_.webp">
+		<img src="https://img.alicdn.com/tfs/TB1NrBxd4TpK1RjSZFKXXa2wXXa-476-538.jpg_500x1000q75s0.jpg_.webp">
+		<p>
+			<span class="q" onmouseover="changeUI(0)"></span>
+			<span onmouseover="changeUI(1)"></span>
+			<span onmouseover="changeUI(2)"></span>
+			<span onmouseover="changeUI(3)"></span>
+			<span onmouseover="changeUI(4)"></span>
+			
+		</p>
+	</div>
+	<button class="c" onclick="leftBtnClick()">左</button>
+	<button class="v" onclick="rightBtnClick()">右</button>
+
+	<script type="text/javascript">
+		var imgs = document.querySelectorAll("img");
+		var spans = document.querySelectorAll("span");
+		function changeUI(xh) {
+			for (var i = 0; i < imgs.length; i++) {
+				imgs[i].style.opacity = "0";
+			}
+			
+			
+			imgs[xh].style.opacity = "1";
+			for (var i = 0; i < spans.length; i++) {
+				spans[i].className = "";
+			}
+			spans[xh].className = "q";
+			currentIdex = xh;
+			
+		}
+		var currentIdex = 0;
+		function rightBtnClick() {
+			currentIdex = currentIdex + 1;
+			if (currentIdex > imgs.length - 1) {
+				currentIdex = 0;
+			}
+		
+			changeUI(currentIdex);
+		}
+		
+			function leftBtnClick(){
+				currentIdex = currentIdex - 1;
+				if (currentIdex < 0) {
+					currentIdex = imgs.length - 1;
+				}
+				changeUI(currentIdex)
+			}
+			var d = setInterval(rightBtnClick,1000);
+			var div = document.querySelector("div");
+			div.onmouseover = function(){
+				clearInterval(d);
+			}
+			div.onmouseleave = function(){
+				d = setInterval(rightBtnClick,1000);
+				
+			}
+ 
+	</script>
+
+</body>
+</html>

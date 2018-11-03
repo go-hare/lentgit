@@ -1,0 +1,32 @@
+*{
+	margin: 0;
+}
+a{
+	font-size: 0.75em;
+	line-height: 3em;
+	color: #666;
+}
+span{
+	/*font-size: 0.75em;
+*/
+}
+.d4{
+	width: 244px;
+	height: 48px;
+	font-size: 1em;
+	text-decoration: underline;
+	line-height: 3em;
+	padding-bottom: 14px;
+	
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	/*margin-top: 30px;*/
+	color: #e6f4fb;
+	text-align: center;
+
+
+
+}
+.d4:hover{
+	text-decoration: none;
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>京东</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		.a{
+			width: 185px;
+			height: 302px;
+			border-left: 25px dashed #fff;
+			border-right: 25px dashed #fff;
+			overflow: hidden;
+		}
+		.s{
+			width: 555px;
+			height: 302px;
+			background-color: #fff;
+		}
+		.d{
+			width: 185px;
+			height: 302px;
+		}
+		img{
+			width: 185px;
+			height: 185px;
+		}
+		h1{
+			font-size: 15px;
+			text-align: center;
+			font-weight: 200;
+			color: #333;
+		}
+		p{
+			height: 20px;
+			line-height: 20px;
+			color: #ee0039;
+			font-size: 22px;
+			text-align: center;
+			margin: 0;
+		}
+		.d{
+			float: left;
+		}
+		.v{
+			width: 236px;
+			height: 30px;
+			background-color: #fff;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		span{
+			display: inline-block;
+			width: 20px;
+			height: 20px;
+			background-color: #000;
+			border-radius: 50%;
+			margin: 9px;
+		}
+		.t{
+			background-color: #ee0039;
+		}
+	</style>
+</head>
+<body>
+	<div class="a">
+		<div class="s">
+			<div class="d">
+				<img src="https://gw.alicdn.com/bao/uploaded/i1/2298016439/TB1hgKIgIjI8KJjSsppXXXbyVXa_!!0-item_pic.jpg">
+				<h1>意大利原装进口 BLANX牙膏非研磨型护齿强烈去渍去烟渍去黄牙</h1>
+				<p>$30.00</p>
+			</div>
+			<div class="d">
+				<img src="https://gw.alicdn.com/bao/uploaded/i1/2298016439/TB1hgKIgIjI8KJjSsppXXXbyVXa_!!0-item_pic.jpg">
+				<h1>韩国Clinie/可莱丝美迪惠尔NMF针剂水库面膜10片 深层补水M版</h1>
+				<p>$60.00</p>
+			</div>
+			<div class="d">
+				<img src="https://gw.alicdn.com/bao/uploaded/i2/2682696826/O1CN0120IM0VUg2pW2mx9_!!0-item_pic.jpg">
+				<h1>正式 尤妮佳moony皇家系列低体重出生儿（早产儿）纸尿裤NB30片</h1>
+				<p>$40.00</p>
+			</div>
+		</div>
+	</div>
+	<div class="v">
+		<span class="t" onmouseover="changeUI(0)"></span>
+		<span onmouseover="changeUI(1)"></span>
+		<span onmouseover="changeUI(2)"></span>
+	</div>
+	<button onclick="leftBtnClick()">左</button>
+	<button onclick="rightBtnClick()">右</button>
+	<script type="text/javascript">
+		var sDiv = document.querySelector(".s");
+		// 获取所有的span
+		var spans = document.querySelectorAll("span");
+
+		function changeUI(xh) {
+			// 调整inDiv的位置
+			
+			sDiv.style.transform = "translateX(-" + xh * 185 + "px)";
+			// 把所有的 span 的 className 设置为 ""
+	 		for (var i = 0; i < spans.length; i++) {
+	 			spans[i].className = "";
+	 		}
+	 		// 把第xh个 span 的 className 设置为 "active"
+	 		spans[xh].className = "t";
+		}
+		var currentIndex = 0;
+		function rightBtnClick() {
+			currentIndex = currentIndex + 1;
+			if (currentIndex > spans.length - 1) {
+				currentIndex = 0;
+			}
+			changeUI(currentIndex);
+		}
+			function leftBtnClick() {
+				currentIndex = currentIndex - 1;
+				if (currentIndex < 0) {
+					currentIndex = currentIndex - 1;
+				}
+				changeUI(currentIndex);
+				
+			}
+			var p = setInterval(rightBtnClick,2000);
+			var div = document.querySelector("div");
+			div.onmouseenter = function () {clearInterval(p);
+
+			}
+			div.onmouseleave = function () {
+				p = setInterval(rightBtnClick2000);
+				
+			}
+			c
+			
+		
+
+		
+	</script>
+
+
+</body>
+</html>

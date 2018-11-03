@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>hudiagf</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		.s{
+			width: 230px;
+			height: 305px;
+			border: 1px dashed #000;
+
+		}
+		.a{
+			width: 198px;
+			height: 65px;
+			
+			margin: 20px;
+
+		}
+		#e{
+			height: 36px;
+			line-height: 18px;
+			font-size: 14px;
+			color: #333;
+			overflow: hidden;
+		}
+		#r{
+			height: 29px;
+			line-height: 29px;
+			font-size: 14px;
+			color: #e33333;	
+		}
+		p{
+			margin: 0;
+			text-align: center;
+		}
+		.s{
+			display: flex;
+			flex-flow: column;
+			justify-content: center;
+			align-items: center;
+			position: relative;
+		}
+		.mask{
+			position: absolute;
+			bottom: 0;
+			width: 230px;
+			height: 100px;
+			background-color: rgba(255,255,255,0.8);
+		}
+		.t{
+			width: 60px;
+			height: 60px;
+			background-color: rgba(0,0,0,0.8);
+			color: #fff;
+			font-size: 12px;
+			font-weight: 100;
+			text-align: center;
+			line-height: 60px;
+			border-radius: 50%;
+		}
+		.mask{
+			display: flex;
+			flex-flow: column;
+			justify-content: center;
+			align-items: center;
+			opacity: 0;
+		}
+		img{
+			transition: all 1s;
+		}
+		.s:hover>img{
+			opacity: 0.8;
+		}
+		.mask{
+			transition: all 1s;
+
+		}
+		.s:hover>.mask{
+			opacity: 1;
+		}
+		.t{
+			transition: all 1s;
+			transform: scale(0);
+		}
+		.s:hover .t{
+			transform: scale(1);
+
+		}
+	</style>
+</head>
+<body>
+	<div class="s">
+		<img src="https://img13.360buyimg.com/jdcms/s170x170_jfs/t23176/362/2042917419/228002/d1ab2df5/5b712805N1dee3f1c.jpg!q90!cc_170x170.webp">
+		<div class="a">
+			<p id="e">
+				慕西莱斯双肩包女2018新款百塔休闲小背包单肩斜挎多用途女包小包包迷你包 黑/兰色  起风了
+			</p>
+			<p id="r">$679.00</p>
+		</div>
+		<div class="mask">
+			<div class="t">找相似</div>
+		</div>
+	</div>
+
+</body>
+</html>

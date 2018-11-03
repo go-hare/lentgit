@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>天猫</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+	.a{
+		width: 200px;
+		height: 290px;
+		border-right: 20px dashed #fff;
+		border-left: 20px dashed #fff;
+		overflow: hidden;
+	}
+	.s{
+		width: 600px;
+		height: 290px;
+		background-color: #fff;
+	}
+	.d{
+		width: 200px;
+		height: 290px;
+	}
+	img{
+		width: 185px;
+		height: 185px;
+	}
+	h1{
+		font-size: 18px;
+		height: 40px;
+		line-height: 20px;
+		color: #666;
+		font-weight: 100;
+
+	}
+	p{
+		height: 20px;
+		line-height: 20px;
+		font-size: 18px;
+		text-align: center;
+		color: #ff0036;
+	}
+	.d{
+		float: left;
+	}
+	.q{
+		width: 240px;
+		height: 30px;
+		background-color: #fff;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	span{
+		display: inline-block;
+		width: 20px;
+		height: 20px;
+		background-color: #eee;
+		border-radius: 50%;
+		margin: 8px;
+
+	}
+	.w{
+		background-color: #ee0039;
+	}
+
+		
+	</style>
+	
+</head>
+<body>
+	<div class="a">
+		<div class="s">
+			<div class="d">
+				<img src="https://img.alicdn.com/bao/uploaded/bao/upload/TB1z.F0dhGYBuNjy0Fnwu05lpXa.png_400x400q60.jpg">
+				<h1>【极速发货】DJI大疆 御 Mavic Air 便携可折叠4K无人机 高清航拍</h1>
+				<p>$4999.00</p>
+			</div>
+			<div class="d">
+				<img src="https://img.alicdn.com/bao/uploaded/i4/126446588/TB2b7LWtrSYBuNjSspfXXcZCpXa_!!126446588.jpg_400x400q60.jpg">
+				<h1>Lenovo/联想拯救者刃7000 2018版台式电脑电竞主机吃鸡游戏主机</h1>
+				<p>$4999.00</p>
+
+			</div>
+			<div class="d">
+				<img src="https://img.alicdn.com/bao/uploaded/i2/2807173571/TB2LlsQkrZnBKNjSZFKXXcGOVXa_!!2807173571.jpg_400x400q60.jpg">
+				<h1>苏泊尔隔水电炖锅陶瓷燕窝炖盅bb煲汤煮粥养生砂锅家用辅食全自动</h1>
+				<p>$169.00</p>
+			</div>
+		</div>
+	</div>
+	<div class="q">
+		<span class="w"></span>
+		<span></span>
+		<span></span>
+	</div>
+	<script type="text/javascript">
+		var sDiv = document.querySelector(".s");
+		var span1 = document.querySelector("span:nth-of-type(1)");
+		var span2 = document.querySelector("span:nth-of-type(2)");
+		var span3 = document.querySelector("span:nth-of-type(3)");
+		function aD() {
+			sDiv.style.transform = "translateX(-200px)";
+			span1.className = "";
+			span2.className = "";
+			span3.className = "";
+			span2.className = "w";
+
+			
+		}
+		span2.onmouseover = aD;
+		function aaD() {
+			sDiv.style.transform = "translateX(-400px)";
+			span1.className = "";
+			span2.className = "";
+			span3.className = "";
+			span3.className = "w";
+
+			
+		}
+		span3.onmouseover = aaD;
+		function asD() {
+			sDiv.style.transform = "translateX(0px)";
+			span1.className = "";
+			span2.className = "";
+			span3.className = "";
+			span1.className = "w";
+
+			
+		}
+		span1.onmouseover = asD;
+	</script>
+
+</body>
+</html>

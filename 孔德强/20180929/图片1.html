@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>找相似</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		.q{
+			width: 230px;
+			height: 305px;
+			border: 1px dashed #000;
+		}
+		.w{
+			width: 198px;
+			height: 65px;
+			
+			margin-top: 20px;
+		}
+		#p1{
+			height: 36px;
+			line-height: 18px;
+			font-size: 14px;
+			color: #333;
+			overflow: hidden;
+		}
+		#p2{
+				height: 29px;
+				line-height: 29px;
+				font-size: 14px;
+				color: #e33333;
+		}
+		p{
+			margin: 0;
+			text-align: center;
+		}
+		.q{
+			display: flex;
+			flex-flow: column;
+			justify-content: center;
+			align-items: center;
+			position: relative;
+		}
+		.mask{
+			position: absolute;
+			bottom: 0;
+			width: 230px;
+			height: 100px;
+			background-color: rgba(255,255.0.0.8);
+		}
+		.e{
+			width: 60px;
+			height: 60px;
+			background-color: rgba(0,0,0,0.8);
+			color: #fff;
+			font-size: 12px;
+			font-weight: 100;
+			text-align: center;
+			line-height: 60px;
+			border-radius: 50%;
+		}
+		.mask{
+			display: flex;
+			flex-flow: column;
+			justify-content: center;
+			align-items: center;
+			opacity: 0;
+		}
+		img{
+			transition: all 1s;
+		}
+		.q:hover>img{
+			opacity: 0.8;
+		}
+		.mask{
+			transition: all 1s;
+		}
+		.q:hover>.mask{
+			opacity: 1;
+		}
+		.e{
+			transform: scale(0);
+			transition: all 1s;
+		}
+		.q:hover .e{
+			transform: scale(1);
+		}
+
+		
+
+	</style>
+</head>
+<body>
+	<div class="q">
+		<img src="https://img12.360buyimg.com/jdcms/s170x170_jfs/t21283/70/1824891249/316862/9166eb33/5b35fd77N020464a0.jpg!q90!cc_170x170.webp">
+		<div class="w">
+			<p id="p1">
+				千里鹰（QANLIIY）便携双筒望远镜升级版 高倍高清微光夜视非红外演唱会拍照望眼镜 猎鹰60X25升级版+多功能刀+手机夹
+				
+			</p>
+			<p id="p2">
+				¥158.00
+			</p>
+		</div>
+		<div class="mask">
+			<div class="e">
+				找相似
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

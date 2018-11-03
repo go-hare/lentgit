@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>fueif</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		.w{
+			width: 230px;
+			height: 305px;
+			border: 1px dashed #000;
+		}
+		.e{
+			width: 198px;
+			height: 85px;
+			
+			margin-top: 20px;
+		}
+		#x{
+			height: 36px;
+			font-size: 14px;
+			line-height: 18px;
+			color: #333;
+			overflow: hidden;
+
+		}
+		#z{
+			height: 29px;
+			line-height: 29px;
+			font-size: 14px;
+			color: #e33333;
+		}
+		p{
+			margin: 0;
+			text-align: center;
+		}
+		.w{
+			display: flex;
+			flex-flow: column;
+			justify-content: center;
+			align-items: center;
+			position: relative;
+		}
+		.mask{
+			position: absolute;
+			bottom: 0;
+			width: 230px;
+			height: 100px;
+			background-color: rgba(255,255,0,0.8);
+		}
+		.c{
+			width: 60px;
+			height: 60px;
+			background-color: rgba(0,0,0,0.8);
+			color: #fff;
+			font-size: 14px;
+			font-weight: 100px;
+			text-align: center;
+			line-height: 60px;
+			border-radius: 50%;
+		}
+		.mask{
+			display: flex;
+			flex-flow: column;
+			justify-content: center;
+			align-items: center;
+			opacity: 0;	
+		}
+		img{
+			transition: all 1s;
+		}
+		.w:hover>img{
+			opacity: 0.8;
+		}
+		.mask{
+			transition: all 1s;
+		}
+		.w:hover>.mask{
+			opacity: 1;
+		}
+		.c{
+			transform: scale(0);
+			transition: all 1s;
+		}
+		.w:hover .c{
+			transform: scale(1);
+		}
+
+		
+
+	</style>
+</head>
+<body>
+	<div class="w">
+		<img src="https://img13.360buyimg.com/jdcms/s170x170_jfs/t16798/135/1613600616/134497/cb413d87/5ad19234N6a359528.jpg!q90!cc_170x170.webp">
+		<div class="e">
+			<p id="x">
+				炫迈 Stride 水蜜西瓜味28片无糖口香糖(新老包装随机发货)
+			</p>
+			<p id="z">
+				$10.00
+			</p>
+		</div>
+		<div class="mask">
+			<div class="c">找相似</div>
+		</div>
+	</div>
+
+</body>
+</html>

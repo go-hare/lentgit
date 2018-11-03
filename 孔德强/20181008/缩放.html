@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>京东</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		.a{
+			width: 185px;
+			height: 302px;
+			border-right: 25px dashed #fff;
+			border-left: 25px dashed #fff;
+			overflow: hidden;
+
+		}
+		.s{
+			width: 555px;
+			height: 302px;
+			background-color: #fff;
+		}
+		.d{
+			width: 185px;
+			height: 302px;
+		}
+		img{
+			width: 185px;
+			height: 185px;
+		}
+		h1{
+			font-size: 16px;
+			height: 40px;
+			line-height: 20px;
+			color: #333;
+			overflow: hidden;
+		}
+		p{
+			font-size: 18px;
+			line-height: 18px;
+			color: #ee0039;
+			text-align: center;
+		}
+		.d{
+			float: left;
+		}
+		.q{
+			width: 236px;
+			height: 30px;
+			background-color: #fff	;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		span{
+			display: inline-block;
+			width: 20px;
+			height: 20px;
+			background-color: #f00;
+			border-radius: 50%;
+			margin: 9px;
+		}
+		.w{
+			background-color: #0ff;
+		}
+		.s,span{
+			transition: all 1s;
+		}
+	</style>
+</head>
+<body>
+	<div class="a">
+		<div class="s">
+			<div class="d">
+				<img src="https://gw.alicdn.com/bao/uploaded/i1/6000000000480/TB2ANfKvrGYBuNjy0FoXXciBFXa_!!6000000000480-0-at.jpg">
+				<h1>【直营】日本大王制纸淡香超长卷卫生纸卷筒纸卷纸单层100m*12卷</h1>
+				<p>$99.00</p>
+			</div>
+			<div class="d">
+				<img src="https://gw.alicdn.com/bao/uploaded/i3/TB1MHViKpXXXXXeaXXXXXXXXXXX_!!0-item_pic.jpg">
+				<h1>中村树之惠日本进口天然足贴脚贴足底贴30片 薰衣草香型</h1>
+				<p>$99.00</p>
+			</div>
+			<div class="d">
+				<img src="https://gw.alicdn.com/bao/uploaded/i2/2155902607/TB1yxswtcj_B1NjSZFHXXaDWpXa_!!0-item_pic.jpg">
+				<h1>CHIARA BCA AMBRA德国眼睫毛增长液正品6ML眉毛3-5倍自然生长液</h1>
+				<p>$99.00</p>
+			</div>
+		</div>
+	</div>
+	<div class="q">
+		<span class="w" onmouseover="changeUI(0)"></span>
+		<span onmouseover="changeUI(1)"></span>
+		<span onmouseover="changeUI(2)"></span>
+	</div>
+	<script type="text/javascript">
+		var sDiv = document.querySelector(".s")
+		var spans = document.querySelectorAll("span");
+		function changeUI(xh) {
+			sDiv.style.transform = "translateX(-" + xh * 185 + "px)";
+			for (var i = 0; i < spans.length; i++) {
+				spans[i].className = "";
+			}
+			spans[xh].className = "w";
+
+
+			
+			
+		}
+	</script>
+
+</body>
+</html>

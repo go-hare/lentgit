@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>天猫</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+	.a{
+		width: 200px;
+		height: 290px;
+		border-right: 20px dashed #fff;
+		border-left: 20px dashed #fff;
+		overflow: hidden;
+	}
+	.s{
+		width: 600px;
+		height: 290px;
+		background-color: #fff;
+	}
+	.d{
+		width: 200px;
+		height: 290px;
+	}
+	img{
+		width: 185px;
+		height: 185px;
+	}
+	h1{
+		font-size: 14px;
+		text-align: center;
+		color: #ee00ee;
+		height: 40px;
+		line-height: 20px;
+	}
+	p{
+		font-size: 25px;
+		height: 20px;
+		line-height: 20px;
+		color: #ee0039;
+		text-align: center;
+	}
+	.d{
+		float: left;
+
+	}
+	.q{
+		width: 240px;
+		height: 30px;
+		background-color: #fff;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	span{
+		display: inline-block;
+		width: 20px;
+		height: 20px;
+		background-color: #ee00ee;
+		border-radius: 50%;
+		margin: 9px;
+	}
+	.w{
+		background-color: #f00;
+	}
+
+		
+	</style>
+
+</head>
+<body>
+	<div class="a">
+		<div class="s">
+			<div class="d">
+				<img src="https://imgservice.suning.cn/uimg1/b2c/image/moeaVojWTcPYLCsDkVQ12Q==.jpg?format=400h_400w_4e_80q">
+				<h1>达利园 糕点 面包 零食 蛋糕蛋香味 600g(蛋糕礼盒)</h1>
+				<p>$10.90</p>
+			</div>
+
+				<div class="d">
+					<img src="https://imgservice.suning.cn/uimg1/b2c/image/WlNB79-7-E9zZRZW4BgoZQ==.jpg?format=400h_400w_4e_80q">
+					<h1>李锦记 锦珍生抽 1650ml 瓶装 生抽 酿造酱油 优质大豆，酿造豉香好酱油，</h1>
+					<p>$50.00</p>
+				</div>
+					<div class="d">
+						<img src="https://imgservice.suning.cn/uimg1/b2c/image/RQPlZMqh9dE4J6da27OFkQ==.jpg?format=400h_400w_4e_80q">
+						<h1>怡宝 纯净饮用水 4.5L*4 整箱装</h1>
+						<p>$10.00</p>
+					</div>
+				
+			</div>
+		</div>
+		<div class="q">
+			<span class="w"></span>
+			<span></span>
+			<span></span>
+		</div>
+		<button onclick="leftBtnClick()">左</button>
+		<button onclick="rightBtnClick()">右</button>
+
+		<script type="text/javascript">
+			var sDiv = document.querySelector(".s");
+			var span1 = document.querySelector("span:nth-of-type(1)");
+			var span2 = document.querySelector("span:nth-of-type(2)");
+			var span3 = document.querySelector("span:nth-of-type(3)");
+			function aD() {
+				sDiv.style.transform = "translateX(-200px)";
+				span1.className = "";
+				span2.className = "";
+				span3.className = "";
+				span2.className = "w";
+
+				
+			}
+			span2.onmouseover = aD;
+			function asD() {
+				sDiv.style.transform = "translateX(-400px)";
+				span1.className = "";
+				span2.className = "";
+				span3.className = "";
+				span3.className = "w";
+
+				
+			}
+			span3.onmouseover = asD;
+			function aaD() {
+				sDiv.style.transform = "translateX(0px)";
+				span1.className = "";
+				span2.className = "";
+				span3.className = "";
+				span1.className = "w";
+
+				
+			}
+			span1.onmouseover = aaD;
+			var currentIndex = 0;
+			function rightBtnClick(){
+				currentIndex = currentIndex + 1;
+				if (currentIndex > imgs.length - 1) {
+					currentIndex = 0;
+				}
+				changeUI(currentIndex);
+				
+			}
+		</script>
+	
+
+</body>
+</html>

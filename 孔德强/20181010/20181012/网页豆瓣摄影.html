@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>网页豆瓣摄影</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		*{
+			margin: 0;
+		}
+		html{
+			width: 100%;
+			height: 100%;
+		}
+		body{
+			width: 100%；
+			height: 100%;
+		}
+		.a{
+			width: 2000px;
+			height: 950px;
+			/*border: 1px dashed #000;*/
+
+		}
+		.s{
+			width: 2000px;
+			height: 950px;
+			position: relative;
+			
+		}
+		h1{
+			position: absolute;
+			width: 1373px;
+			height: 193px;
+			top: 420px;
+			left: 320px;
+			font-size: 36px;
+			text-align: center;
+			color: #fff;
+			letter-spacing: .25em;
+			font-weight: 100;
+		}
+		.d{
+			width:  160px;
+			height: 40px;
+			background-color: #f66;
+			position: absolute;
+			top: 550PX;
+			left: 910px;
+			display: flex;
+
+			justify-content: center;
+			align-items: center;
+			border-radius: 3px;
+			
+		}
+
+		p{
+		
+			color: #fff;
+			font-size: 17px;
+			letter-spacing: .1em;
+			white-space: nowrap;
+			font-weight: 100;
+			
+			
+		
+		}
+		.d:hover{
+			opacity: 0.9;
+
+		}
+		.f{
+			position: absolute;
+			top: 5px;
+			left: 15px;
+			width: 212px;
+			height: 60px;
+			/*background-color: #000;*/
+		}
+		.logo1{
+			width: 60px;
+			height :60px;
+			opacity: 0.3;
+		}
+		.w1{
+			width: 151px;
+			height: 60px;	
+		/*	background-color: #ddd;*/
+			float: right;
+			margin: 0;
+			font-size: 10px;
+			text-align: center;
+			margin-top: 10px;
+
+		}
+		.w3{
+			font-size: 10px;
+			margin-top: 10px;
+			text-align: center;
+		}
+		.d1{
+			width: 1719px;
+			height: 60px;
+			/*background-color: #ddd;*/
+			position: absolute;
+			top: 5px;
+		}
+		.d2{
+			width: 430px;
+			height: 29px;
+		/*	background-color: #000;*/
+			position: absolute;
+			top: 8px;
+			left: 240px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.dd1{
+			display: inline-block;
+			width: 50px;
+			height: 29px;
+			/*background-color: #fff;*/
+			margin: 15px;
+			text-align: center;
+			font-size: 15px;
+			border-radius: 5px;
+			color: #fff;
+			font-weight: 100;
+
+		}
+		
+		
+
+		.d4{
+			position: absolute;
+			right: 20px;
+			top: 15px;
+		}
+		.d5{
+			width: 2000px;
+			height: 359px;
+			/*border: 1px dashed #000;*/
+			margin-top: 60px;
+			position: relative;
+			overflow: hidden;
+		}
+		h2{
+			width: 2000px;
+			height: 39px;
+			/*border: 1px dashed #000;*/
+			text-align: center;
+			letter-spacing: 0.53em;
+			color: rgb(102,102,102);
+			font-weight: 200;
+			font-size: 30px;
+			/*overflow: hidden;*/
+		}
+		.d6{
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 5000px;
+			height: 292px;
+			/*background-color: #ddd;*/
+		
+			
+
+			
+		}
+		.d7{
+			width: 1000px;
+			height: 292px;
+			float: left;
+			
+			
+		}
+		.d8{
+			width: 1000px;
+			height: 36px;
+			/*background-color: #ddd;*/
+			position: absolute;
+			top: 320px;	
+			left: 500px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		
+
+		}
+		span{
+			display: inline-block;
+			width: 170px;
+			height: 36px;
+			/*background-color: #fff;*/
+			opacity: 0.8;
+			float: left;
+			color: #666;
+			text-align: center;
+			font-size: 17px;
+		
+
+		}
+		.d10{
+			/*background-color: #ee0039;*/
+		}
+		.d11{
+			width: 1000px;
+			height: 292px;
+			/*border: 1px dashed #000;*/
+			position: absolute;
+			bottom: 0;
+			left: 500px;
+			overflow: hidden;
+
+		}
+		.a1{
+			width: 2000px;
+			height: 1200px;
+			/*border: 1px dashed #000;*/
+			position: relative;
+		}
+		.a2{
+			position: absolute;
+			top:60px;
+		}
+		.a3{
+			width: 1000px;
+			height: 34px;
+			/*background-color: #ddd;*/
+			position: absolute;
+			left: 500px;
+			top: 100px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		q{
+			letter-spacing: 5px;	
+			font-size: 14px;
+			
+			color: rgb(102,102,102);
+		}
+		.a4{
+			width: 1020px;
+			height: 17px;
+			/*background-color: #ddd;*/
+			position: absolute;
+			left: 500px;
+			top: 130px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			
+		}
+		.a5{
+			color: rgb(51,119,170);
+			position: absolute;
+			right: 1050px;
+			top: 0;
+			font-size: 14px;
+		
+		}
+		.a6{
+			width: 1000px;
+			height: 1000px;
+		/*	border: 1px dashed #000;*/
+			position: absolute;
+			left: 500px;
+			top: 160px;
+		}
+		.a7{
+			width: 660px;
+			height: 660px;
+			position: relative;
+		}
+		.a8{
+			width: 320px;
+			height: 320px;
+			border: 1px solid #eee;
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
+		.a9{
+			width: 320px;
+			height:207px;
+		}
+		.a10{
+			width: 318px;
+			height: 71px;
+			/*border: 1px dashed #000;*/
+			margin-top: 15px;
+		}
+		.a11{
+			color: #666;
+			text-align: center;
+		}
+		.a12{
+			font-size: 14px;
+			/*background-*/color: #ee0039;
+			width: 318px;
+			height: 19px;
+			letter-spacing: 0em;
+			margin-top: 3px;
+		}
+		.a13{
+			font-size: 14px;
+			width: 318px;
+			height: 16px;
+			letter-spacing: 0em;
+		}
+		.s1{
+			width: 320px;
+			height: 320px;
+			border: 1px solid #eee;
+			position: absolute;
+			top: 340px;
+			right: 0;
+		}
+		.s2{
+			width: 320px;
+			height:207px;
+		}
+		.s3{
+			width: 318px;
+			height: 71px;
+			/*border: 1px dashed #000;*/
+			margin-top: 15px;
+		}
+		.s4{
+			color: #666;
+			text-align: center;
+		}
+		.s5{
+			font-size: 14px;
+			/*background-*/color: #ee0039;
+			width: 318px;
+			height: 19px;
+			letter-spacing: 0em;
+			margin-top: 3px;
+		}
+		.s6{
+			font-size: 14px;
+			width: 318px;
+			height: 16px;
+			letter-spacing: 0em;
+		}
+		.f1{
+			width: 320px;
+			height: 320px;
+			border: 1px solid #eee;
+			position: absolute;
+			bottom: 0;
+			right: 0;
+		}
+		.f2{
+			width: 320px;
+			height:207px;
+		}
+		.f3{
+			width: 318px;
+			height: 71px;
+			/*border: 1px dashed #000;*/
+			margin-top: 15px;
+		}
+		.f4{
+			color: #666;
+			text-align: center;
+		}
+		.f5{
+			font-size: 14px;
+			/*background-*/color: #ee0039;
+			width: 318px;
+			height: 19px;
+			letter-spacing: 0em;
+			margin-top: 3px;
+		}
+		.f6{
+			font-size: 14px;
+			width: 318px;
+			height: 16px;
+			letter-spacing: 0em;
+		}
+		.g1{
+			width: 320px;
+			height: 320px;
+			border: 1px solid #eee;
+			position: absolute;
+			bottom: 0;
+			right: 340px;
+		}
+		.g2{
+			width: 320px;
+			height:207px;
+		}
+		.g3{
+			width: 318px;
+			height: 71px;
+			/*border: 1px dashed #000;*/
+			margin-top: 15px;
+		}
+		.g4{
+			color: #666;
+			text-align: center;
+		}
+		.g5{
+			font-size: 14px;
+			/*background-*/color: #ee0039;
+			width: 318px;
+			height: 19px;
+			letter-spacing: 0em;
+			margin-top: 3px;
+		}
+		.g6{
+			font-size: 14px;
+			width: 318px;
+			height: 16px;
+			letter-spacing: 0em;
+		}
+		.j1{
+			width: 320px;
+			height: 320px;
+			border: 1px solid #eee;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+		}
+		.j2{
+			width: 320px;
+			height:207px;
+		}
+		.j3{
+			width: 318px;
+			height: 71px;
+			/*border: 1px dashed #000;*/
+			margin-top: 15px;
+		}
+		.j4{
+			color: #666;
+			text-align: center;
+		}
+		.j5{
+			font-size: 14px;
+			/*background-*/color: #ee0039;
+			width: 318px;
+			height: 19px;
+			letter-spacing: 0em;
+			margin-top: 3px;
+		}
+		.j6{
+			font-size: 14px;
+			width: 318px;
+			height: 16px;
+			letter-spacing: 0em;
+		}
+		img{
+			transition: all 0.5s;
+		}
+
+		
+		
+	
+
+
+	</style>
+</head>
+<body>
+	<div class="a">
+		<img class="s" src="https://qnypy.doubanio.com/201701151757113816__l">
+		<h1>预约摄影师拍照
+			<br>记录每一个特别的你
+    </h1>
+    <div  class="d">
+    	<p>如何预约拍照?</p>
+    	</div>
+    	<div class="f">
+    		<div class="logo">
+    			<img class="logo1" src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=2627819871,2601610407&fm=27&gp=0.jpg">
+    			<div class="w1">豆瓣旗下女性摄影服务平台
+    				<p class="w3">
+          客服: 400-8353-331
+        </p>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+    <div class="d1">
+    	<div>
+    		<p class="d4">登录</p>
+    	</div>
+    	<div class="d2">
+    		<p class="dd1" onmouseover="changeUI(0)">首页</p>
+    		<p class="dd1" onmouseover="changeUI(1)">套系</p>
+    		<p class="dd1" class="dd2" onmouseover="changeUI(2)">摄影师</p>
+    		<p class="dd1" onmouseover="changeUI(3)">客片</p>
+    		<p class="dd1" onmouseover="changeUI(4)">活动</p>
+    	</div>
+    </div>
+    <script type="text/javascript">
+    	// function changeUI(xh) {
+    	// 	var spans = document.querySelectorAll("span");
+    	// 	for (var i = 0; i < spans.length; i++) {
+    	// 		spans[i].className = "";
+    	// 	}
+    	// 	spans[xh].className = "d3";
+    	// 	}
+    		
+    	
+    </script>
+    <div class="d5">
+    	<div class="d11">
+    		<div class="d6">
+    			<img class="d7" src="https://qnypy.doubanio.com/201604121600574057__xl">
+    			<img class="d7" src="https://qnypy.doubanio.com/201611281905327232__xl">
+    			<img class="d7" src="https://qnypy.doubanio.com/201701161845001702__l">
+    			<img class="d7" src="https://qnypy.doubanio.com/201611241207566793__xl">
+    			<img class="d7" src="https://qnypy.doubanio.com/201603231536339756__xl">
+    			
+   		 	</div>
+    			
+    </div>
+    <h2>热门专题</h2>
+   
+   		 <div class="d8">
+    		<span class="d9 d10" onmouseover="changeUI(0)">|  肖像照专场  |</span>
+    		<span class="d9" onmouseover="changeUI(1)">|  你该换张证件照了 |</span>
+    		<span class="d9" onmouseover="changeUI(2)">|  三十别计划  |</span>
+    		<span class="d9" onmouseover="changeUI(3)">|  婚纱早鸟票  |</span>
+    		<span class="d9" onmouseover="changeUI(4)">|  青春纪念场  |</span>
+   	 	</div>
+	</div>
+	<!-- <button onclick="leftBtnClick()">左</button>
+	<button onclick="rightBtnClick()">右</button> -->
+	<script type="text/javascript">
+		var d6Div = document.querySelector(".d6");
+		var spans = document.querySelectorAll("span");
+		function changeUI(xh) {
+			d6Div.style.transform = "translateX(-" + xh * 1000 + "px)";
+			for (var i = 0; i < spans.length; i++) {
+				spans[i].className = "";
+			}
+			spans[xh].className = "d10";
+		}
+		var currentIndex  = 0;
+		function rightBtnClick() {
+			currentIndex = currentIndex + 1;
+			if (currentIndex > spans.length - 1) {
+				currentIndex = 0;
+			}
+			changeUI(currentIndex);
+			
+		}
+		function leftBtnClick() {
+			currentIndex = currentIndex - 1;
+			if (currentIndex < 0) {
+				currentIndex = spans.length - 1;
+			}
+			changeUI(currentIndex);
+			
+		}
+		var intervalId = setInterval(rightBtnClick,2000);
+		var div = document.querySelector("div");
+		div.onmouseenter = function () {
+				clearInterval(intervalId);
+				
+			}
+		div.onmouseleave = function () {
+			intervalId = setInterval(rightBtnClick,2000);
+				
+			}
+			
+		
+	</script>
+	<div class="a1">
+		<h2 class="a2">写真</h2>
+		<div class="a3">
+			<q>在这里，你是女主角</q>
+		</div>
+		<div class="a4">
+		<h1 class="a5">北京  上海  广州  成都  武汉  全部</h1>
+		</div>
+		<div class="a6">
+			<img class="a7" src="https://qnypy.doubanio.com/201606141539065533__l">
+			<div class="a8">
+				<img class="a9" src="https://qnypy.doubanio.com/201612301506585766__l">
+				<div class="a10">
+					<p class="a11">夏至未至</p>
+					<h2 class="a12">$1600起/套</h2>
+					<h2 class="a13">北京</h2>
+				
+				</div>
+			</div>
+			<div class="s1">
+				<img class="s2" src="https://qnypy.doubanio.com/201605111858147461__l">
+				<div class="s3">
+					<p class="s4">等风来</p>
+					<h2 class="s5">$8698起/套</h2>
+					<h2 class="s6">北京</h2>
+				</div>
+			</div>
+			<div class="f1">
+				<img class="f2" src="https://qnypy.doubanio.com/201610071403512273__l">
+				<div class="f3">
+					<p class="f4">带我去远方</p>
+					<h2 class="f5">$8698起/套</h2>
+					<h2 class="f6">上海</h2>
+				</div>
+			</div>
+			<div class="g1">
+				<img class="g2" src="https://qnypy.doubanio.com/201701031157154563__l">
+				<div class="g3">
+					<p class="g4">文艺青年的旅拍婚纱照</p>
+					<h2 class="g5">#7900起/套</h2>
+					<h2 class="g6">垦丁, 大理, 北京, 青岛</h2>
+				</div>
+			</div>
+			<div class="j1">
+				<img class="j2" src="https://qnypy.doubanio.com/201611142144303989__l">
+				<div class="j3">
+					<p class="j4">遇见未来的你-婚纱摄影</p>
+					<h2 class="j5">$4000起/套</h2>
+					<h2 class="j6">南京</h2>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<link rel="stylesheet" type="text/css" href="豆瓣摄影.css">
+
+
+
+
+
+</body>
+<div id="db">
+	<div class="b3"></div>
+	<div class="b1">
+		<p class="b2">更多写真套系</p>
+	</div>
+</div>
+<div class="v1">
+	<div class="v2">
+		<p class="v3">婚纱</p>
+	</div>
+	<div class="v4">
+		<p class="v5">新婚照，格调最重要</p>
+	</div>
+	<div class="v6">
+		<p class="v7">北京  上海  杭州  成都  武汉  全部</p>
+	</div>
+	<div class="l1">
+		<img class="l2" src="https://qnypy.doubanio.com/201612141737242878__l">
+		<div class="l3">
+			<img class="l7" src="https://qnypy.doubanio.com/201612301552132883__l">
+			<h2 class="l4">我遇见了你，就像遇见...</h2>
+			<p class="l5">$4000起/套</p>
+			<p class="l6">北京</p>
+		</div>
+		<div class="k1">
+			<img class="k2" src="https://qnypy.doubanio.com/201608011910505695__l">
+			<h2 class="k3">只有我们知道的地方</h2>
+			<p class="k4">￥3600起/套</p>
+			<p class="k5">杭州, 上海, 北京</p>
+		</div>
+		<div class="o1">
+			<img class="o2" src="https://qnypy.doubanio.com/201701210051194095__l">
+			<h2 class="o3">和你在一起的时候 阳...</h2>
+			<p class="o4">$4500起/套</p>
+			<p class="o5">垦丁, 大理, 北京, 青岛</p>
+		</div>
+		<div class="m1">
+			<img class="m2" src="https://qnypy.doubanio.com/201612161719097705__l">
+			<h2 class="m3">我眼中最美的风景</h2>
+			<p class="m4">$10800起/套</p>
+			<p class="m5">北京</p>
+		</div>
+		<div class="z1">
+			<img class="z2" src="https://qnypy.doubanio.com/201611151334204439__l">
+			<h2 class="z3">最美不过你和阳光都在...</h2>
+			<p class="z4">$9800起/套</p>
+			<p class="z5">上海</p>
+		</div>
+	</div>
+</div>
+<div class="u1">
+	<div class="u2">更多婚纱套系</div>
+
+</div>
+<div class="p1">
+	<div class="p2">
+		<div class="p3">
+			<img class="p4" src="https://img3.doubanio.com/f/ypy/82992bcd72242f6eace5ec8a1d96b7b72069058e/pics/ic_feature_1.png">
+			<div class="p5">
+				<p class="p6">最棒的摄影师</p>
+				<p class="p7">这里每一位摄影师，都是豆瓣摄影从专业、创意、服务三个方面，于千百摄影师中精挑细选而来</p>
+			</div>
+
+		</div>
+		<div class="c1">
+			<img class="c2" src="https://img3.doubanio.com/f/ypy/d454782b767bd9473b6f4d4b6e7f1aff9e6514f1/pics/ic_feature_2.png">
+			<div class="c3">
+				<p class="c4">1对1定制拍摄</p>
+				<p class="c5">每一次拍摄都花足心思，在意每一个人的个性特点，拒绝模式化生产。好照片，属于每一个特别的你。
+        </p>
+			</div>
+		</div>
+		<div class="r1">
+			<img class="r2" src="https://img3.doubanio.com/f/ypy/873f3f59f1f97a447b745a7718cf492de7b6f785/pics/ic_feature_3.png">
+			<div class="r3">
+				<p class="r4">没有额外消费</p>
+				<p class="r5">所有服务内容均价格透明，没有任何形式的诱导消费，你最初看到的价格就是最终要支付的金额。
+        </p>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="x1">
+	<h2 class="x2">本期推荐摄影师</h2>
+	<div class="x3">
+		<p class="x4">全部摄影师</p>
+	</div>
+	<div class="x5">
+		<img class="x6" src="https://qnypy.doubanio.com/201701161232106551__l">
+		<div class="x7">
+			<img class="x8" src="https://img1.doubanio.com/view/ypy_pger_avatar/small/public/7d3b15a35cf7268.jpg">
+			<a class="x9">人生海海工作室</a>
+			<div class="x10">(北京)</div>
+			<h2 class="x11">人生海海－一拍一签约工作室，一个除了［很赞］没有其他评价的工作室，一个把“每一个你”都当作明星一样闪耀的工作室。主理人吴晓松，从事人像摄影工作八年，他是一拍一“写真摄影师养成计划”的讲师，也是著名音乐人金玟岐、刘瑞琦唱片封面的拍摄及策划者。</h2>
+			<p class="x12">-- 小拍推荐</p>
+			<p class="x13">更多作品</p>
+		</div>
+	</div>
+</div>
+<div class="aa1">
+	<div class="aa2">
+		<img class="aa3" src="https://img3.doubanio.com/f/ypy/1f6d8a4cb8c89de5d931a3d4e3276a7221c3c0d9/pics/promotion/lion/qr.jpg">
+		<p class="aa4">微信服务号 ypy-douban</p>
+	</div>
+	<div class="aa5">
+		<p class="aa8">
+      © 2016 豆瓣摄影    关于我们   拍摄流程   常见问题</p>
+		<div class="aa6">
+			<p class="aa7">
+        客服电话: 400-8353-331请按3 (工作日9:30到19:30)
+      </p>
+		</div>
+	</div>
+</div>
+
+</html>

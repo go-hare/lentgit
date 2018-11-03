@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>京东</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		.out{
+			width: 241px;
+			height: 488px;
+			border: 1px dashed rgb(0,0,0);
+			overflow: hidden;
+		}
+		.in{
+			width: 241px;
+			height: 152px;
+			background-color: rgb(255,255,0);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 30px;
+
+		}
+		.out{
+			position: relative;
+		}
+		.in{
+			position: absolute;
+			bottom: 0;
+		}
+		.out:hover>.in{
+			background-color: rgb(255,0,0);
+			color: rgb(255,255,255);
+		}
+		.logo{
+			width: 80px;
+			height: 80px;
+			background-color: rgb(255,255,255);
+			position: absolute;
+			left: 80px;
+			top: 300px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border-radius: 50%;
+			transition: all 1s
+		}
+		.logo:hover{
+			transform: rotate(360deg);
+		}
+	</style>
+</head>
+<body>
+	<div class="out">
+		<img src="https://img13.360buyimg.com/cms/jfs/t13582/10/2251218226/38762/e9c1f537/5a390a65Nfd5dbdbf.jpg!q80.webp">
+		<div class="in">小刀</div>
+		<div class="logo">
+			<img src="https://img10.360buyimg.com/cms/jfs/t15907/74/722368806/2238/c48bbb18/5a3cae4dN9b6e55f0.jpg!q80.webp">
+		</div>
+	</div>
+
+</body>
+</html>

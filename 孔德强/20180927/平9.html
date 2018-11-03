@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>wef</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		.out{
+			width: 241px;
+			height: 488px;
+			border: 1px dashed rgb(0,0,0);
+			overflow: hidden;
+
+		}
+		.in{
+			width: 241px;
+			height: 152px;
+			background-color: rgb(255,255,0);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 30px;
+		}
+		.out{
+			position: relative;
+		}
+		.in{
+			position: absolute;
+			bottom: 0;
+		}
+		.out:hover>.in{
+			background-color: rgb(255,0,0);
+			color: rgb(255,255,255);
+
+		}
+		.logo{
+			width: 80px;
+			height: 80px;
+			background-color: rgb(255,255,255);
+			position: absolute;
+			left: 80px;
+			top: 300px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border-radius: 50%;
+			transition: all 1s
+
+
+		}
+		.logo:hover{
+			transform: rotate(360deg);
+		}
+	</style>
+</head>
+<body>
+	<div class="out">
+		<img src="https://img14.360buyimg.com/cms/jfs/t13726/147/2302878494/29247/e7e5e4af/5a39082eN0e8173eb.jpg!q80.webp">
+		<div class="in">捷安特</div>
+		<div class="logo">
+			<img src="https://img13.360buyimg.com/cms/jfs/t16318/65/696197526/2415/9f1c3d1b/5a3cb172N33671c03.jpg!q80.webp">
+		</div>
+	</div>
+
+</body>
+</html>

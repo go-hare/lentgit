@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>觅me</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		.out{
+			/*宽高*/
+			width: 350px;
+			height: 355px;
+			/*边框*/
+			border-left: 20px solid #ffff00;
+			border-right: 20px solid #ffff00;
+
+			/*溢出部分隐藏*/
+			overflow: hidden;
+		}
+		.in{
+			/*宽高*/
+			width: calc(350px * 3);
+			height: 355px;
+			/*背景颜色*/
+			/*background-color: #dddddd;*/
+		}
+
+		.item{
+			/*宽高*/
+			width: 350px;
+			height: 355px;
+		}
+
+		h1{
+
+			/*字体大小*/
+			font-size: 16px;
+			/*字体颜色*/
+			color: #333333;
+			/*高度*/
+			height: 50px;
+			/*行高*/
+			line-height: 56px;
+			/*禁止换行*/
+			white-space: nowrap;
+			/*溢出部分隐藏*/
+			overflow: hidden;
+			/*文字溢出部分用省略号方式显示*/
+			text-overflow: ellipsis;
+			/*文字居中*/
+			text-align: center;
+			/*清除外边距*/
+			margin: 0;
+		}
+
+		p{
+			/*清除外边距*/
+			margin: 0;
+			/*字体大小*/
+			font-size: 14px;
+			/*字体颜色*/
+			color: #999;
+			/*高度*/
+			height: 40px;
+			/*行高*/
+			line-height: 20px;
+			/*溢出部分隐藏*/
+			overflow: hidden;
+			/*文字居中*/
+			text-align: center;
+			/*字体粗细*/
+			font-weight: 100;
+		}
+
+		.item{
+			float: left;
+		}
+
+
+		.fenyeqi{
+			width: 390px;
+			height: 30px;
+			background-color: #eeeeee;
+
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		span{
+			display: inline-block;
+			width: 10px;
+			height: 10px;
+			background-color: #00ee00;
+			margin: 8px;
+			border-radius: 50%;
+		}
+
+		.active{
+			background-color: #ee0000;
+		}
+
+		.in,span{
+			transition: all 1s;
+		}
+	</style>
+</head>
+<body>
+	<div class="out">
+		<div class="in">
+			<div class="item">
+				<img src="https://img11.360buyimg.com/mobilecms/s350x250_jfs/t1/4596/22/9391/191661/5bac8221Ea53a5018/f47c6c86a586bac7.jpg!q90!cc_350x250.webp">
+				<h1>仅需3步，单身贵族每天都有品质生活</h1>
+				<p>
+					有时候，总觉得单身贵族就像一个贬义词，虽然单身的人大多行为自由，可生活品质却着实不咋地，尤其是男生，除了宅，就是浪，哪有点贵族的样子！
+				</p>
+			</div>
+
+			<div class="item">
+				<img src="https://img12.360buyimg.com/mobilecms/s350x250_jfs/t26176/284/521864251/35394/8a4fc2fe/5bb07835N21ac20fc.jpg!q90!cc_350x250.webp">
+				<h1>不容错过！小仙女迷倒男神的全面攻略！</h1>
+				<p>
+					随着天气渐渐入秋，也便代表着我们的开学季近了。将要再次踏入校园的各位小仙女可别忘了打扮自己。
+				</p>
+			</div>
+
+			<div class="item">
+				<img src="https://img13.360buyimg.com/mobilecms/s350x250_jfs/t12499/263/2569933854/19627/50163857/5a430ebbNfdef005d.jpg!q90!cc_350x250.webp">
+				<h1>这些成人玩具，虽然无聊但真的叫人上瘾</h1>
+				<p>
+					玩具不应该只是小孩的专属品。
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="fenyeqi">
+		<span class="active" onmouseover="changeUI(0)"></span>
+		<span onmouseover="changeUI(1)"></span>
+		<span onmouseover="changeUI(2)"></span>
+	</div>
+
+	<script type="text/javascript">
+		// 获取inDiv
+		var inDiv = document.querySelector(".in");
+		// 获取所有的span
+		var spans = document.querySelectorAll("span");
+
+		function changeUI(xh) {
+			// 调整inDiv的位置
+			
+			inDiv.style.transform = "translateX(-" + xh * 350 + "px)";
+			// 把所有的 span 的 className 设置为 ""
+	 		for (var i = 0; i < spans.length; i++) {
+	 			spans[i].className = "";
+	 		}
+	 		// 把第xh个 span 的 className 设置为 "active"
+	 		spans[xh].className = "active";
+		}
+
+	</script>
+</body>
+</html>

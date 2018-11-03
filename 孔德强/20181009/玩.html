@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>苏宁</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		.a{
+			width: 160px;
+			height: 240px;
+			border-left: 20px dashed #fff;
+			border-right: 20px dashed #fff;
+			overflow: hidden;
+		}
+		.s{
+			width: 480px;
+			height: 240px;
+			background-color: #ddd;
+		}
+		.d{
+			width: 160px;
+			height: 240px;
+		}
+		img{
+			width: 160px;
+			height: 200px;
+		}
+		p{
+			font-size: 20px;
+			height: 40px;
+			line-height: 20px;
+			white-space: nowrap;
+			overflow: hidden;
+			text-align: center;
+			text-overflow: ellipsis;
+			margin: 0;
+			font-weight: 100;
+
+		}
+		.d{
+			float: left;
+		}
+		.q{
+			width: 200px;
+			height: 25px;
+			background-color: #ee00ee;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		span{
+			display: inline-block;
+			width: 15px;
+			height: 15px;
+			background-color: #ee0000;
+			border-radius: 50%;
+			margin: 8px;
+
+		}
+		.w{
+			background-color: #000;
+		}
+		.s,span{
+			transition: all 1s;
+		}
+	</style>
+</head>
+<body>
+	<div class="a">
+		<div class="s">
+			<div class="d">
+				<img src="https://imgservice.suning.cn/uimg1/b2c/image/HMxHqyI1cMLqL4_5veogIA==.jpg?format=400h_400w_4e_80q">
+				<p>法国原装进口 圣元（Synutra）优博 布瑞弗尼4段儿童配方牛奶 200ml*6 轻享装</p>
+			</div>
+			<div class="d">
+				<img src="https://imgservice.suning.cn/uimg1/b2c/image/2CxgzR5B6bRMQElioFBnKw==.jpg?format=400h_400w_4e_80q">
+				<p>Arla爱氏晨曦 全脂纯牛奶200ml*24盒整箱 德国进口</p>
+			</div>
+			<div class="d">
+				<img src="https://imgservice.suning.cn/uimg1/b2c/image/Imq2yEJPD01IY7Xp9jK1Pw==.jpg?format=400h_400w_4e_80q">
+				<p>简单滋味 南美白虾仁中号250g（27-34只）</p>
+			</div>
+		</div>
+	</div>
+	<div class="q">
+		<span class="w"></span>
+		<span></span>
+		<span></span>
+	</div>
+	<script type="text/javascript">
+		var sDiv = document.querySelector(".s");
+		var span1 = document.querySelector("span:nth-of-type(1)");
+		var span2 = document.querySelector("span:nth-of-type(2)");
+		var span3 = document.querySelector("span:nth-of-type(3)");
+		function imgD() {
+			
+			sDiv.style.transform = "translateX(-160px)";
+			
+			span1.className = "";
+			span2.className = "";
+			span3.className = "";
+			
+			span2.className = "W";
+		}
+		
+		span2.onmouseover = imgD;
+		function imD() {
+			
+			sDiv.style.transform = "translateX(-320px)";
+			
+			span1.className = "";
+			span2.className = "";
+			span3.className = "";
+			
+			span3.className = "W";
+		}
+		
+		span3.onmouseover = imD;
+		function iD() {
+			
+			sDiv.style.transform = "translateX(0px)";
+			
+			span1.className = "";
+			span2.className = "";
+			span3.className = "";
+			
+			span1.className = "W";
+		}
+		
+		span1.onmouseover = iD;
+		
+		
+	
+	</script>
+
+</body>
+</html>

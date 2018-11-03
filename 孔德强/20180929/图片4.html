@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>购房款</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		.w{
+			width: 230px;
+			height: 305px;
+			border: 1px dashed #000;
+		}
+		.e{
+			width: 198px;
+			height: 65px;
+		
+			margin-top: 20px;
+		}
+		
+		
+		
+		#s{
+			height: 36px;
+			line-height: 18px;
+			font-size: 14px;
+			color: #333;
+			overflow: hidden;
+		}
+		#d{
+			height: 29px;
+			line-height: 29px;
+			font-size: 14px;
+			color: #e33333;
+		}
+		p{
+			margin: 0;
+			text-align: center;
+			
+			}
+		.w{
+			display: flex;
+			flex-flow: column;
+			justify-content: center;
+			align-items: center;
+			position: relative;
+
+		}
+		.mask{
+			position: absolute;
+			bottom: 0;
+			width: 230px;
+			height: 100px;
+			background-color: rgba(255,255,0,0.8);
+		}
+		.s{
+			width: 60px;
+			height: 60px;
+			background-color: rgba(0,0,0,0.8);
+			font-size: 12px;
+			font-weight: 100;
+			color: #fff;
+			text-align: center;
+			line-height: 60px;
+			border-radius: 50%;
+
+		}
+		.mask{
+			display: flex;
+			flex-flow: column;
+			justify-content: center;
+			align-items: center;
+			opacity: 0;
+		}
+		img{
+			transition: all 1s;
+		}
+		.w:hover>img{
+			opacity: 0.8;
+		}
+		.mask{
+			transition: all 1s;
+		}
+		.w:hover>.mask{
+			opacity: 1;
+		
+		}
+		.s{
+			transform: scale(0);
+			transition: all 1s;
+		}
+		.w:hover .s{
+			transform: scale(1);
+		}
+
+	</style>
+</head>
+<body>
+	<div class="w">
+		<img src="https://img10.360buyimg.com/jdcms/s170x170_jfs/t25069/144/1012139314/469287/9642c9f9/5b864829N40b22c11.jpg!q90!cc_170x170.webp">
+		<div class="e">
+			<p id="s">
+				恒瑞活性炭 除甲醛7000g 家居新房装修室内除甲醛清除剂吸去异味竹炭包净化除味汽车家用碳包
+			</p>
+			<p id="d">
+				¥58.00
+			</p>
+		</div>
+		<div class="mask">
+			<div class="s">找相似</div>
+		</div>
+	</div>
+
+</body>
+</html>

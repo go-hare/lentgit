@@ -1,0 +1,100 @@
+.biankuang{
+	width: 1200px;
+	height: 620px;
+	border: 1px solid #ddd;
+	margin: 0 auto;
+}
+.out{
+	width: 230px;
+	height: 305px;
+	border: 1px solid #ddd;
+	float: left;
+	margin: 2px 4px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+
+}
+.img{
+	margin-top: 20px;
+}
+.in{
+	width: 230px;
+	height: 100px;
+	color: #666;
+	margin-top: 12px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.p1{
+	width: 198px;
+	height: 36px;
+	font-size: 14px;
+	line-height: 18px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-align: center;
+	
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+.p2{
+	width: 198px;
+	height: 25px;
+	color: #ee0039;
+	font-size: 14px;
+	text-align: center;
+	line-height: 24px;
+	position: absolute;
+	bottom: 0;
+
+}
+.w{
+	width: 230px;
+	height: 100px;
+	background-color: #fff;
+	position: absolute;
+	bottom: 0;
+	opacity: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.s{
+	width: 60px;
+	height: 60px;
+	background-color: #ddd;
+	color: #fff;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+img{
+	transition: all 1s;
+}
+.out>img:hover{
+	opacity: 0.8;
+}
+.w{
+	transition: all 1s;
+}
+.out>.w:hover{
+
+	opacity: 1;
+}
+.s{
+	transform: rotate(1);
+	transition: all 1s;
+}
+.out> .s:hover{
+	opacity: 1;
+
+}
+
+

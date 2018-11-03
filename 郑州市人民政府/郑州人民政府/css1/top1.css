@@ -1,0 +1,20 @@
+#top: {
+	width: 100%;
+
+	
+}
+
+
+
+	
+
+body{
+	background-image:  
+	/*url(http://www.zhengzhou.gov.cn/r/cms/www/cn/images/2016_body_bg.png)no-repeat,*/
+	url(http://www.zhengzhou.gov.cn/r/cms/www/cn/images/2016_top_bg.png);
+	
+	background-repeat: no-repeat;
+	background-position: top center;
+	}
+	
+	

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>fghjkl</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+	.a{
+		width: 160px;
+		height: 240px;
+		border-right: 20px dashed #000;
+		border-left: 20px dashed #000;
+		overflow: hidden;
+	
+	}
+	.s{
+		width: 480px;
+		height: 240px;
+		background-color: #ddd;
+	}
+	img{
+		width: 200px;
+		height: 200px;
+
+	}
+	.d{
+		width: 160px;
+		height: 240px;
+	}
+	p{
+		font-size: 15px;
+		color: #333;
+		height: 20px;
+		line-height: 15px;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		text-align: center;
+		margin-top: 5px;
+	}
+	.d{
+		float: left;
+	}
+	.f{
+		width: 200px;
+		height: 20px;
+		background-color: #eee;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	span{
+		display: inline-block;
+		width: 10px;
+		height: 10px;
+		background-color: #ee00ee;
+		border-radius: 50%;
+		margin: 8px;
+	}
+	.g{
+		background-color: #ee0000;
+	}
+	.s,span{
+		transition: all 1s;
+	}
+
+		
+	</style>
+	
+</head>
+<body>
+	<div class="a">
+		<div class="s">
+			<div class="d">
+				<img src="https://imgservice.suning.cn/uimg1/b2c/image/348wiiq3tLvAu5afj3nbqg==.jpg?format=400h_400w_4e_80q">
+				<p>绝艺 卤味小食 全荤大礼包20小包 344g(湖南特产肉类熟食网红零食)</p>
+			</div>
+			<div class="d">
+				<img src="https://imgservice.suning.cn/uimg1/b2c/image/zHBOTmznscor5sYRbzHrvg==.jpg?format=400h_400w_4e_80q">
+				<p>乱劈才懒人火锅 410g/盒装 自热火锅 冷水自煮麻辣小火锅 方便火锅 香辣味经典装重庆火锅麻辣冷水自热</p>
+			</div>
+			<div class="d">
+				<img src="https://imgservice.suning.cn/uimg1/b2c/image/DdxUkgtn2d-J6UuxyIvRCg==.jpg?format=400h_400w_4e_80q">
+				<p>农夫山泉天然饮用水5L*4 整箱装</p>
+			</div>
+		</div>
+	</div>
+	<div class="f">
+		<span class="g"></span>
+		<span></span>
+		<span></span>
+	</div>
+	<script type="text/javascript">
+		var sDiv = document.querySelector(".s");
+		var span1 = document.querySelector("span:nth-of-type(1)");
+		var span2 = document.querySelector("span:nth-of-type(2)");
+		var span3 = document.querySelector("span:nth-of-type(3)");
+		function imgD() {
+		
+			sDiv.style.transform = "translateX(-160px)";
+			
+			span1.className = "";
+			span2.className = "";
+			span3.className = "";
+			
+			span2.className = "g";
+		}
+	
+		span2.onmouseover = imgD;
+		function simgD() {
+			sDiv.style.transform = "translateX(-320px)";
+			span1.className = "";
+			span2.className = "";
+			span3.className = "";
+			span3.className = "g";
+		}
+		span3.onmouseover = simgD;
+		function aimgD() {
+			sDiv.style.transform = "translateX(0px)";
+			span1.className = "";
+			span2.className = "";
+			span3.className = "";
+			span1.className = "g";
+		}
+		span1.onmouseover = aimgD;
+		
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>fufgu</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		.q{
+			width: 230px;
+			height: 305px;
+			border: 1px dashed #000;
+		}
+		.w{
+			width: 198px;
+			height: 65px;
+			margin-top: 20px;
+		}
+		#a{
+			font-size: 14px;
+			line-height: 18px;
+			height: 36px;
+			color: #333;
+			overflow: hidden;
+		}
+		#s{
+			color: #e33333;
+			height: 29px;
+			line-height: 29px;
+			font-size: 14px;
+		}
+		p{
+			margin: 0;
+			text-align: center;
+		}
+		.q{
+			display: flex;
+			flex-flow: column;
+			justify-content: center;
+			align-items: center;
+			position: relative;
+		}
+		.mask{
+			position: absolute;
+			bottom: 0;
+			width: 230px;
+			height: 100px;
+			background-color: rgba(255,255,0,0.8);
+		}
+		.d{
+			width: 60px;
+			height: 60px;
+			background-color: rgba(0,0,0,0.8);
+			color: #fff;
+			font-size: 12px;
+			font-weight: 100;
+			text-align: center;
+			line-height: 60px;
+			border-radius: 50%;
+		}
+		.mask{
+			display: flex;
+			flex-flow: column;
+			justify-content: center;
+			align-items: center;
+			opacity: 0;
+		}
+		img{
+			transition: all 1s;
+		}
+		.q:hover>img{
+			opacity: 0.8;
+		}
+		.mask{
+			transition: all 1s;
+		}
+		.q:hover>.mask{
+			opacity: 1;
+		}
+		.d{
+			transform: scale(0);
+			transition: all 1s;
+		}
+		.q:hover .d{
+			transform: scale(1);
+		}
+
+		
+	</style>
+</head>
+<body>
+	<div class="q">
+		<img src="https://img12.360buyimg.com/jdcms/s170x170_jfs/t18964/119/2302707569/536569/7d4ac8a6/5af14604N45e50f68.jpg!q90!cc_170x170.webp">
+		<div class="w">
+			<p id="a">
+				聪妈 【原木30包 1元/包】抽纸纸巾整箱家庭装批发卫生纸抽取式面巾纸餐巾纸家用纸抽母婴可用促销
+			</p>
+			<p id="s">
+				¥31.90
+			</p>
+		</div>
+		<div class="mask">
+			<div class="d">找相似</div>
+		</div>
+	</div>
+
+</body>
+</html>

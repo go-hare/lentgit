@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>轮播图</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		div{
+			/*宽高*/
+			width: 590px;
+			height: 470px;
+			/*边框*/
+			border: 5px dashed #000000;
+
+
+			/*相对定位*/
+			position: relative;
+		}
+		img{
+			/*绝对定位*/
+			position: absolute;
+
+			/*
+				不透明度
+				opacity
+				0:透明;		1:不透明;
+			*/
+			opacity: 0;
+		}
+
+		/*div中的第一张img不透明*/
+		img:nth-of-type(1){
+			opacity: 1;
+		}
+
+		p{
+			width: 100%;
+			height: 40px;
+			/*background-color: #ffff00;*/
+
+			/*绝对定位*/
+			position: absolute;
+			bottom: 0;
+		}
+
+		span{
+			/*span不能直接设置大小，想要设置大小，需要先设置 display:inline-block */
+			display: inline-block;
+			width: 10px;
+			height: 10px;
+			background-color: #0000ff;
+			/*外边距*/
+			margin: 8px;
+			/*圆角*/
+			border-radius: 50%;
+		}
+
+		p{
+			/*弹性容器*/
+			display: flex;
+			/*主轴居中*/
+			justify-content: center;
+			/*交叉轴居中*/
+			align-items: center;
+		}
+
+		.active{
+			background-color: #ff0000;
+		}
+
+		img,span{
+			transition: all 1s;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<img src="https://m.360buyimg.com/babel/jfs/t24706/243/1398585185/75180/94d9e2d5/5baee696N2e9ddc36.jpg">
+
+		<img src="https://img1.360buyimg.com/da/jfs/t1/2048/33/9019/100992/5bab4108E4df26cc3/7c7603bfbeb64f80.jpg">
+
+		<img src="https://img1.360buyimg.com/da/jfs/t1/315/19/10113/68118/5bad20baEf31cbe35/93d56e0b84e3c8a1.jpg">
+
+		<img src="https://m.360buyimg.com/babel/jfs/t7288/273/3959184678/98922/9500a4a5/5bb07559Na92c768f.jpg">
+
+		<p>
+			<span class="active" onmouseover="changeUI(0)"></span>
+			<span onmouseover="changeUI(1)"></span>
+			<span onmouseover="changeUI(2)"></span>
+			<span onmouseover="changeUI(3)"></span>
+		</p>
+	</div>
+
+
+	<!-- 
+		javascript用来处理用户与页面之间的交互，需要写在 body 的结束标记上方，script 标记中
+	 -->
+
+	 <script type="text/javascript">
+
+	 	/*
+			document.querySelector("选择器")		获取页面中第一个匹配选择器的标记
+			document.querySelectorAll("选择器")	获取页面中所有匹配选择器的标记
+	 	*/
+
+	 	// 获取所有的图片
+	 	var imgs = document.querySelectorAll("img");
+	 	// console.log(imgs);
+	 	// 获取所有的span
+	 	var spans = document.querySelectorAll("span");
+
+	 	// 更改页面
+	 	function changeUI(xh){
+	 		// 把所有的 img 的 opacity 设置为 0
+	 		for (var i = 0; i < imgs.length; i++) {
+	 			imgs[i].style.opacity = "0";
+	 		}
+	 		// 把第xh张 img 的 opacity 设置为 1
+	 		imgs[xh].style.opacity = "1";
+	 		// 把所有的 span 的 className 设置为 ""
+	 		for (var i = 0; i < spans.length; i++) {
+	 			spans[i].className = "";
+	 		}
+	 		// 把第xh个 span 的 className 设置为 "active"
+	 		spans[xh].className = "active";
+	 	}
+
+	 </script>
+</body>
+</html>
