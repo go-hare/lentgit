@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>轮播图</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+	div{
+		width: 590px;
+		height: 470px;
+		border: 1px dashed #fff;
+		position: relative;
+	}
+	img{
+		position: absolute;
+		opacity: 0;
+	}
+	img:nth-of-type(1){
+		opacity: 1;
+	}
+	p{
+		width: 100%;
+		height: 30px;
+	
+		position: absolute;
+		bottom: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	span{
+		display: inline-block;
+		width: 20px;
+		height: 20px;
+		background-color: #fff;
+		border-radius: 50%;
+		margin: 10px;
+	}
+	.a{
+		background-color: #f00;
+	}
+	img,span{
+		transition: all 1s;
+	}
+
+		
+	</style>
+	
+	
+</head>
+<body>
+	<div>
+		<img src="https://m.360buyimg.com/babel/jfs/t27244/191/513628804/97651/b59ae87e/5bb04b84N9df43282.jpg">
+		<img src="https://img1.360buyimg.com/da/jfs/t27286/239/474308390/95210/fa3b4d95/5baf3b72N54c166a9.jpg">
+		<img src="https://img1.360buyimg.com/pop/jfs/t1/5312/29/8547/109852/5ba9d39bE49d09c17/424dd2a70674a73b.jpg">
+		<img src="https://m.360buyimg.com/babel/jfs/t26830/55/554049237/98922/9500a4a5/5bb0770dN45cb0713.jpg">
+		<p>
+			<span class="a"></span>
+			<span></span>
+			<span></span>
+			<span></span>
+		</p>
+	</div>
+	<script type="text/javascript">
+		 var img1 = document.querySelector("img:nth-of-type(1)");
+		 var img2 = document.querySelector("img:nth-of-type(2)");
+		 var img3 = document.querySelector("img:nth-of-type(3)");
+		 var img4 = document.querySelector("img:nth-of-type(4)");
+		 var span1 = document.querySelector("span:nth-of-type(1)");
+		 var span2 = document.querySelector("span:nth-of-type(2)");
+		 var span3 = document.querySelector("span:nth-of-type(3)");
+		 var span4 = document.querySelector("span:nth-of-type(4)");
+		 function aImg() {
+		 	img1.style.opacity = "0";
+		 	img2.style.opacity = "0";
+		 	img3.style.opacity = "0";
+		 	img4.style.opacity = "0";
+		 	img2.style.opacity = "1";
+		 	span1.className = "";
+		 	span2.className = "";
+		 	span3.className = "";
+		 	span4.className = "";
+		 	span2.className = "a";
+
+		 	
+		 }
+		 span2.onmouseover = aImg;
+		 function aeImg() {
+		 	img1.style.opacity = "0";
+		 	img2.style.opacity = "0";
+		 	img3.style.opacity = "0";
+		 	img4.style.opacity = "0";
+		 	img3.style.opacity = "1";
+		 	span1.className = "";
+		 	span2.className = "";
+		 	span3.className = "";
+		 	span4.className = "";
+		 	span3.className = "a";
+
+		 	
+		 }
+		 span3.onmouseover = aeImg;
+		 function awImg() {
+		 	img1.style.opacity = "0";
+		 	img2.style.opacity = "0";
+		 	img3.style.opacity = "0";
+		 	img4.style.opacity = "0";
+		 	img4.style.opacity = "1";
+		 	span1.className = "";
+		 	span2.className = "";
+		 	span3.className = "";
+		 	span4.className = "";
+		 	span4.className = "a";
+
+		 	
+		 }
+		 span4.onmouseover = awImg;
+		 function asImg() {
+		 	img1.style.opacity = "0";
+		 	img2.style.opacity = "0";
+		 	img3.style.opacity = "0";
+		 	img4.style.opacity = "0";
+		 	img1.style.opacity = "1";
+		 	span1.className = "";
+		 	span2.className = "";
+		 	span3.className = "";
+		 	span4.className = "";
+		 	span1.className = "a";
+
+		 	
+		 }
+		 span1.onmouseover = asImg;
+	</script>
+	
+</body>
+</html>

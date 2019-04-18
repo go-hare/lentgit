@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>京东</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		div{
+			width: 590px;
+			height: 470px;
+			border: 1px dashed #000;
+			position: relative;
+		}
+		img{
+			position: absolute;
+			opacity: 0;
+		}
+		img:nth-of-type(1){
+			opacity: 1;
+		}
+		p{
+			position: absolute;
+			bottom: 0;
+			width: 590px;
+			height: 30px;
+		/*	background-color: #000;*/
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+		}
+		span{
+			display: inline-block;
+			width: 20px;
+			height: 20px;
+			background-color: #fff;
+			border-radius: 50%;
+			margin: 9px;
+		}
+		.a{
+			background-color: #ee0039;
+		}.q{
+			position: absolute;
+			top: 200px;
+			left: 9px;
+			width: 30px;
+			height: 70px;
+			border-radius: 12.5px;
+			opacity: 0.3;
+		}
+		.w{
+			position: absolute;
+			top: 200px;
+			left: 570px;
+			width: 30px;
+			height: 70px;
+			border-radius: 12.5px;
+			opacity: 0.3;
+		}
+
+	</style>
+</head>
+<body>
+	<div>
+		<img src="https://m.360buyimg.com/babel/jfs/t25258/213/1769373321/86099/a5cd101e/5bbc184fN741d5ca2.jpg">
+		<img src="https://m.360buyimg.com/babel/jfs/t25612/185/1715537201/66448/dd9eb054/5bbad154Ncc0a1baf.jpg">
+		<img src="https://m.360buyimg.com/babel/jfs/t26467/299/960248850/40488/1cda9ffc/5bbcbac9Nde0c3f21.jpg">
+		<img src="https://img1.360buyimg.com/da/jfs/t27328/59/220286459/87903/50237f91/5b8a69c1N5176732d.jpg">
+	
+	
+		<p>
+			<span class="a" onmouseover = "changeUI(0)"></span>
+			<span onmouseover = "changeUI(1)"></span>
+			<span onmouseover = "changeUI(2)"></span>
+			<span onmouseover = "changeUI(3)"></span>
+		</p>
+	</div>
+	<button class="q" onclick="leftBtnClick()">左</button>
+	<button class="w" onclick="rightBtnClick()">右</button>
+
+	<script type="text/javascript">
+		var imgs = document.querySelectorAll("img");
+		var spans = document.querySelectorAll("span");
+		function changeUI(xh) {
+			for (var i = 0; i < imgs.length; i++) {
+				imgs[i].style.opacity = "0";
+
+			}
+			imgs[xh].style.opacity = "1";
+			for (var i = 0; i < spans.length; i++) {
+				spans[i].className = "";
+			}
+			spans[xh].className = "a";
+			currentIndex = xh;
+			
+		}
+			var currentIndex = 0;
+			function rightBtnClick() {
+				currentIndex = currentIndex + 1;
+				if (currentIndex > imgs.length - 1) {
+					currentIndex = 0;
+				}
+				changeUI(currentIndex);
+				
+			}
+			function leftBtnClick() {
+				currentIndex = currentIndex - 1;
+				if (currentIndex < 0) {
+					imgs.length - 1;
+				}
+				changeUI(currentIndex);
+			}
+			var r = setInterval(rightBtnClick,2000);
+			var div = document.querySelector("div");
+			div.onmouseover = function () {
+				clearInterval(r);
+
+			
+			}
+			div.onmouseover = function () {
+				r = setInterval(rightBtnClick,2000);
+			
+			}
+	</script>
+
+
+</body>
+</html>

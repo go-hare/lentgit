@@ -1,0 +1,43 @@
+#b{
+	width: 994px;
+	height: 60px;
+	background-color: #e43126;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 250px;
+}
+#b span{
+	font-size: 1em;
+	line-height: 3.5em;	
+	
+	width: 64px;
+	height: 60px;
+	margin-right: 16px;
+	margin-left: 20px;
+	color: #fff;
+
+
+}
+#b>.b1{
+	display: inline-block;
+	width: 64px;
+	height:60px;
+	margin-left:0;
+	float: left;
+	line-height: 4em;
+
+
+	text-align: center;
+}
+#b>div{
+	width: 120px;
+	height: 23px;
+	background-color: #fff;
+	float: right;
+	margin-right: 25px;
+	margin-top: 17px;
+	border-radius: 12px;
+}
+#b img{
+	float: right;
+}

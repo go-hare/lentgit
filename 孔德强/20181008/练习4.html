@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>feksjgfyuk</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+	div{
+		width: 590px;
+		height: 470px;
+		border: 1px dashed #000;
+		position: relative;
+	}
+	img{
+		position: absolute;
+		opacity: 0;
+	}
+	img:nth-of-type(1){
+		opacity: 1;
+	}
+	p{
+		width: 100%;
+		height: 40px;
+		position: absolute;
+		bottom: 0;
+	}
+	span{
+		display: inline-block;
+		width: 10px;
+		height: 10px;
+		background-color: rgb(255,255,255);
+		margin: 8px;
+		border-radius: 50%;
+	}
+	p{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.a{
+		background-color: rgb(255,255,0	);
+	}
+	img,span{
+		transition: all 1s;
+	}
+
+
+		
+	</style>
+	
+</head>
+<body>
+	<div>
+		<img src="https://m.360buyimg.com/babel/jfs/t24706/243/1398585185/75180/94d9e2d5/5baee696N2e9ddc36.jpg">
+		<img src="https://img1.360buyimg.com/da/jfs/t1/2048/33/9019/100992/5bab4108E4df26cc3/7c7603bfbeb64f80.jpg">
+		<img src="https://img1.360buyimg.com/da/jfs/t1/315/19/10113/68118/5bad20baEf31cbe35/93d56e0b84e3c8a1.jpg">
+		<img src="https://m.360buyimg.com/babel/jfs/t7288/273/3959184678/98922/9500a4a5/5bb07559Na92c768f.jpg">
+		<p>
+			<span class="a"></span>
+			<span></span>
+			<span></span>
+			<span></span>
+		</p>
+	</div>
+	<script type="text/javascript">
+		var img1 = document.querySelector("img:nth-of-type(1)");
+		var img2 = document.querySelector("img:nth-of-type(2)");
+		var img3 = document.querySelector("img:nth-of-type(3)");
+		var img4 = document.querySelector("img:nth-of-type(4)");
+		var span1 = document.querySelector("span:nth-of-type(1)");
+		var span2 = document.querySelector("span:nth-of-type(2)");
+		var span3 = document.querySelector("span:nth-of-type(3)");
+		var span4 = document.querySelector("span:nth-of-type(4)");
+		function qTimg() {
+			img1.style.opacity = "0";
+			img2.style.opacity = "0";
+			img3.style.opacity = "0";
+			img4.style.opacity = "0";
+			img2.style.opacity = "1";
+			span1.clssName = "";
+			span2.clssName = "";
+			span3.clssName = "";
+			span4.clssName = "";
+			span2.clssName = "a";
+
+			
+		}
+		span2.onmouseover = qTimg;
+		function wTimg() {
+			img1.style.opacity = "0";
+			img2.style.opacity = "0";
+			img3.style.opacity = "0";
+			img4.style.opacity = "0";
+			img3.style.opacity = "1";
+			span1.clssName = "";
+			span2.clssName = "";
+			span3.clssName = "";
+			span4.clssName = "";
+			span3.clssName = "a";
+ 		}
+ 		span3.onmouseover = wTimg;
+ 		function rTimg() {
+ 			img1.style.opacity = "0";
+ 			img2.style.opacity = "0";
+ 			img3.style.opacity = "0";
+ 			img4.style.opacity = "0";
+ 			img4.style.opacity = "1";
+ 			span1.clssName = "";
+ 			span2.clssName = "";
+ 			span3.clssName = "";
+ 			span4.clssName = "";
+ 			span4.clssName = "a";
+ 		}
+ 		span4.onmouseover = rTimg;
+ 		function tTimg() {
+ 			img1.style.opacity = "0";
+ 			img2.style.opacity = "0";
+ 			img3.style.opacity = "0";
+ 			img4.style.opacity = "0";
+ 			img1.style.opacity = "1";
+ 			span1.clssName = "";
+ 			span2.clssName = "";
+ 			span3.clssName = "";
+ 			span4.clssName = "";
+ 			span1.clssName = "a";
+ 		}
+ 		span1.onmouseover = tTimg;
+
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>bvgcfgdvwhbn.</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+	.q{
+		width: 350px;
+		height: 355px;
+		border-right: 20px dashed #000;
+		border-left: 20px dashed #000;
+		overflow: hidden;
+	}
+	.in{
+		width: 1050px;
+		height: 355px;
+	}
+	.a{
+		width: 350px;
+		height: 355px;
+	}
+	h1{
+		font-size: 16px;
+		color: #333;
+		height: 50px;
+		line-height: 56px;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		text-align: center;
+		margin: 0;
+	}
+	p{
+		margin: 0;
+		font-size: 14px;
+		color: #999;
+		height: 40px;
+		line-height: 20px;
+		overflow: hidden;
+		text-align: center;
+		font-weight: 100;
+	}
+	.a{
+		float: left;
+	}
+	.z{
+		width: 390px;
+		height: 30px;
+		background-color: #eee;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	span{
+		display: inline-block;
+		width: 10px;
+		height: 10px;
+		background-color: #00ee00;
+		border-radius: 50%;
+		margin: 8px;
+	}
+	.x{
+		background-color: #ee0000;
+	}
+	.in,span{
+		transition: all 1s;
+	}
+	
+
+		
+	</style>
+	
+</head>
+<body>
+	<div class="q">
+		<div class="in">
+			<div class="a">
+				<img src="https://img12.360buyimg.com/mobilecms/s350x250_jfs/t26176/284/521864251/35394/8a4fc2fe/5bb07835N21ac20fc.jpg!q90!cc_350x250.webp">
+				<h1>不容错过！小仙女迷倒男神的全面攻略！</h1>
+				<p>随着天气渐渐入秋，也便代表着我们的开学季近了。将要再次踏入校园的各位小仙女可别忘了打扮自己。</p>
+			</div>
+			<div class="a">
+				<img src="https://img11.360buyimg.com/mobilecms/s350x250_jfs/t1/4596/22/9391/191661/5bac8221Ea53a5018/f47c6c86a586bac7.jpg!q90!cc_350x250.webp">
+				<h1>仅需3步，单身贵族每天都有品质生活</h1>
+				<p>有时候，总觉得单身贵族就像一个贬义词，虽然单身的人大多行为自由，可生活品质却着实不咋地，尤其是男生，除了宅，就是浪，哪有点贵族的样子！</p>
+			</div>
+		</div>
+		</div>
+		<div class="z">
+			<span class="x"></span>
+			<span></span>
+		</div>
+		<script type="text/javascript">
+			var inDiv = document.querySelector(".in");
+			var span1 = document.querySelector("span:nth-of-type(1)");
+			var span2 = document.querySelector("span:nth-of-type(2)");
+			function bianA() {
+			// 调整inDiv的位置
+			inDiv.style.transform = "translateX(-350px)";
+			// 把所有的 span 的类名设置为 ""
+			span1.className = "";
+			span2.className = "";
+			span3.className = "";
+			// 把第二个 span 的类名设置为 "active"
+			span2.className = "x";
+		}
+		// 给span2绑定事件
+		span2.onmouseover = bianA;
+		function timA() {
+			inDiv.style.transform = "translateX(0px)";
+			span1.className = "";
+			span2.className = "";
+			span1.className = "x";
+		}
+		span1.onmouseover = timA;
+		
+
+				
+			
+		</script>
+	
+
+
+
+		
+	
+
+</body>
+</html>

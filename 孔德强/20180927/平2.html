@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>京东是</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		.out{
+			width: 241px;
+			height: 488px;
+			border: 1px dashed rgb(0,0,0);
+			overflow: hidden;
+		}
+		.in{
+			width: 241px;
+			height: 152px;
+			background-color: rgb(255,255,0);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 30px;
+		}
+		.out{
+			position: relative;
+		}
+		.in{
+			position: absolute;
+			bottom: 0px;
+		}
+		.out:hover>.in{
+			background-color: rgb(255,0,0);
+			color: rgb(255,255,255);
+
+		}
+		.logo{
+			width: 80px;
+			height: 80px;
+			background-color: rgb(255,255,255);
+			position: absolute;
+			left: 83px;
+			top: 300px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border-radius: 50%;
+			transition: all 1s;
+
+		}
+		.logo:hover{
+			transform: rotate(360deg);
+		}
+	</style>
+</head>
+<body>
+	<div class="out">
+		<img src="https://img12.360buyimg.com/cms/jfs/t15631/256/631965297/45021/4ddb4df5/5a390948N482b598f.jpg!q80.webp">
+		<div class="in">MARMOT</div>
+		<div class="logo">
+			<img src="https://img10.360buyimg.com/cms/jfs/t15229/95/808970361/2604/3772e90f/5a39d4e3Nbaccc831.jpg!q80.webp">
+		</div>
+	</div>
+
+</body>
+</html>

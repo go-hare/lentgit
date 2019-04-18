@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>gfh</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		div{
+			width: 822px;
+			height: 460px;
+			border: 1px dashed #000;
+			position: relative;
+		}
+		img{
+			position: absolute;
+			opacity: 0;
+		}
+		img:nth-of-type(1){
+			opacity: 1;
+		}
+		p{
+			width: 100%;
+			height: 40px;
+			position: absolute;
+			bottom: 0;
+		}
+		span{
+			display: inline-block;
+			width: 10px;
+			height: 10px;
+			background-color: #0000ff;
+			margin: 8px;
+			border-radius: 50%;
+		}
+		p{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.a{
+			background-color: #ff0000;
+		}
+		img,span{
+			transition: all 1s;
+		}
+		div{
+			position: relative;
+		}
+		.h{
+			position: absolute;
+			width: 30px;
+			height: 80px;
+			top: 190px;
+			left: 9px;
+			opacity: 0.3;
+			border-radius: 8px;
+		}
+		.j{
+			position: absolute;
+			top: 190px;
+			right: 900px;
+			width: 30px;
+			height: 80px;
+			opacity: 0.3;
+			border-radius: 8px;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<img src="https://img10.360buyimg.com//babel/jfs/t26626/288/515292053/162980/eac98b4b/5bb038adNa7a58584.jpg!q80.webp">
+		<img src="https://img10.360buyimg.com/da/jfs/t22894/53/846190008/156555/d3f96e1d/5b45d256N3770b842.jpg!q80.webp">
+		<img src="https://img11.360buyimg.com//babel/jfs/t26209/155/426240873/65850/aa19ab03/5badf06fN79e4e059.jpg!q80.webp">
+		<p>
+			<span class="a" onmouseover="changeUI(0)"></span>
+			<span onmouseover="changeUI(1)"></span>
+			<span onmouseover="changeUI(2)"></span>
+		</p>
+	</div>
+	<button class="h" onclick="leftBtnClick()">左</button>
+	<button class="j" onclick="rightBtnClick()">右</button>
+<script type="text/javascript">
+	var imgs = document.querySelectorAll("img");
+	
+	var spans = document.querySelectorAll("span");
+	
+	function changeUI(xh) {
+		for (var i = 0; i < imgs.length; i++) {
+			imgs[i].style.opacity = "0";
+		}
+		imgs[xh].style.opacity = "1";
+		for (var i = 0; i < spans.length; i++) {
+			spans[i].className = "";
+					}
+		spans[xh].className = "a";
+		currentIndex = xh;
+		
+	}
+	var currentIndex = 0;
+	function rightBtnClick() {
+		currentIndex = currentIndex + 1;
+		if (currentIndex > imgs.length - 1) {
+			currentIndex = 0;
+		}
+		changeUI(currentIndex);
+		
+	}
+	function leftBtnClick() {
+		currentIndex = currentIndex - 1;
+		if (currentIndex < 0) {
+			currentIndex = imgs.length - 1;
+		}
+		changeUI(currentIndex);
+		
+	}
+	var d = setInterval(rightBtnClick,200);
+	var div = document.querySelector("div");
+	div.onmouseover = function () {
+		clearInterval(d);
+
+	
+	}
+	div.onmouseover = function () {
+		d = setInterval(rightBtnClick,200);
+	
+	}
+	
+</script>
+
+</body>
+</html>

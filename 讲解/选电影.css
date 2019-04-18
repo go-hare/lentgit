@@ -1,0 +1,23 @@
+/*选电影*/
+.xuan-Dian-Ying{
+	width: 1040px;
+	margin-top: 50px;
+	/*background-color: yellow;*/
+	margin-right: auto;
+	margin-left: auto;
+}
+.xuan-Dian-Ying>h2{
+	width: 1040px;
+	height: 28px;
+	font-weight: bold;
+    color: #494949;
+    margin: 0;
+    padding: 0 0 15px 0;
+    line-height: 48px;
+    font-size: 26px;
+}
+/*轮播图*/
+.dian-Ying{
+	width: 1040px;
+	background-color: yellow;
+}

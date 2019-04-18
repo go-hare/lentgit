@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>京东</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		.a{
+			width: 185px;
+			height: 302px;
+			border-left: 25px dashed #fff;
+			border-right: 25px dashed #fff;
+			overflow: hidden;
+			position: relative;
+
+
+		}
+		.s{
+			width: calc(185px * 3);
+			height: 302px;
+			background-color: #ddd;
+		}
+		.d{
+			width: 185px;
+			height: 302px;
+		}
+		img{
+			width: 185px;
+			height: 185px;
+		}
+		h1{
+			font-size: 14px;
+			height: 40px;
+			line-height: 20px;
+			text-align: center;
+			font-weight: 200;
+			color: #333;
+		}
+		p{
+			height: 20px;
+			line-height: 20px;
+			color: #ee0039;
+			font-size: 19px;
+			text-align: center;
+		}
+		.d{
+			float: left;
+		}
+		.z{
+			width: 236px;
+			height: 30px;
+			background-color: #fff;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		span{
+			display: inline-block;
+			width: 20px;
+			height:20px;
+			background-color: #000;
+			border-radius: 50%;
+			margin: 9px;
+		}
+		.x{
+			background-color: #ee0039;
+		}
+		.b{
+			width: 25px;
+			height: 62px;
+			position: absolute;
+			top: 170px;
+			left: 33px;
+			opacity: 0.2;
+			border-radius: 12px;
+
+
+		}
+		.n{
+			width: 25px;
+			height: 62px;
+			position: absolute;
+			top: 170px;
+			left: 193px;
+			opacity: 0.2;
+			border-radius: 12px;
+		}
+	</style>
+</head>
+<body>
+	<div class="a">
+		<div class="s">
+			<div class="d">
+				<img src="https://gw.alicdn.com/bao/uploaded/i3/725677994/TB2u.Eyc3HqK1RjSZFkXXX.WFXa_!!725677994-0-sm.jpg">
+				<h1>绿劲柚子柠檬不伤手食品用洗洁精餐具净2kg威露士</h1>
+				<p>$30.00</p>
+			</div>
+			<div class="d">
+				<img src="https://gw.alicdn.com/bao/uploaded/i4/725677994/TB2aPAZc9zqK1RjSZFpXXakSXXa_!!725677994-0-sm.jpg">
+				<h1>白猫深层洁净 活氧除菌 专业除螨 洗衣粉1.38kg</h1>
+				<p>$40.00</p>
+			</div>
+			<div class="d">
+				<img src="https://gw.alicdn.com/bao/uploaded/i1/725677994/TB2fUQNc7PoK1RjSZKbXXX1IXXa_!!725677994-0-sm.jpg">
+				<h1>宝鼎天鱼糟卤 三年陈糟 500ml 新老包装交替中</h1>
+				<p>$6.7</p>
+			</div>
+		</div>
+	</div>
+	<div class="z">
+		<span class="x" onmouseover="changeUI(0)"></span>
+		<span onmouseover="changeUI(1)"></span>
+		<span onmouseover="changeUI(2)"></span>
+	</div>
+	<button class="b" onclick="leftBtnClick()">左</button>
+	<button class="n" onclick="rightBtnClick()">右</button>
+	<script type="text/javascript">
+		var sDiv = document.querySelector(".s");
+		var spans = document.querySelectorAll("span");
+		function changeUI(xh) {
+			sDiv.style.transform = "translateX(-" + xh * 185 + "px)";
+			for (var i = 0; i < spans.length; i++) {
+				spans[i].className = "";
+			}
+			spans[xh].className = "x";
+		
+		}
+		var currentIndex = 0;
+		function rightBtnClick() {
+			currentIndex = currentIndex + 1;
+			if (currentIndex > spans.length - 1) {
+				currentIndex = 0;
+			}
+			changeUI(currentIndex);
+			
+		}
+		function leftBtnClick() {
+			currentIndex = currentIndex - 1;
+			if (currentIndex < 0) {
+				currentIndex = spans.length - 1;
+			}
+			changeUI(currentIndex);
+			
+		}
+		var g = setInterval(rightBtnClick,2000);
+		var div = document.querySelector("div");
+		div.onmouseover = function () {clearInterval(g);
+			
+		}
+		div.onmouseleave = function(){
+	 		g = setInterval(rightBtnClick,2000);
+	 	}
+		
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>降低</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+	.a{
+		width: 590px;
+		height: 470px;
+		border: 1px dashed #000;
+		overflow: hidden;
+		position: relative;
+	}
+	.s{
+		width: 1770px;
+		height:470px;
+		background-color: #ddd;
+	}
+	img{
+		float: left;
+	}
+	.g{
+		width: 590px;
+		height: 40px;
+		background-color: #fff;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	span{
+		display: inline-block;
+		width: 20px;
+		height: 20px;
+		background-color: #000;
+		border-radius: 50%;
+		margin: 10px;
+
+	}
+	.v{
+		background-color: #ee0039;
+	}
+	.s,span{
+		transition: all 1s;
+	}
+	.q{
+		width: 30px;
+		height: 90px;
+		position: absolute;
+		top: 200px;
+		left: 9px;
+		opacity: 0.3;
+		border-radius: 12px;
+
+	}
+	.w{
+		width: 30px;
+		height: 90px;
+		opacity: 0.3;
+		border-radius: 12px;
+		position: absolute;
+		top: 200px;
+		left: 570px;
+	}
+
+		
+	</style>
+</head>
+<body>
+	<div class="a">
+		<div class="s">
+			<div class="d">
+				<img src="https://m.360buyimg.com/babel/jfs/t26035/301/1787103384/96465/40d0b807/5bbc25b7N3dba871b.jpg">
+			</div>
+			<div class="d">
+				<img src="https://m.360buyimg.com/babel/jfs/t1/2672/14/9113/92824/5bac4575Eace9543d/91b001fefb3530bd.jpg">
+			</div>
+			<div class="d">
+				<img src="https://m.360buyimg.com/babel/jfs/t27379/258/917716268/98455/84612495/5bbc69b7N362f3cae.jpg">
+			</div>
+		</div>
+	</div>
+	<div class="g">
+		<span class="v" onmouseover="changeUI(0)"></span>
+		<span onmouseover="changeUI(1)"></span>
+		<span onmouseover="changeUI(2)"></span>
+	</div>
+	<button class="q" onclick="leftBtnClick()">左</button>
+	<button class="w" onclick="rightBtnClick()">右</button>
+	<script type="text/javascript">
+		var sDiv = document.querySelector(".s");
+		var spans = document.querySelectorAll("span");
+		function changeUI(xh) {
+			sDiv.style.transform = "translateX(-" + xh * 590 + "px)";
+			
+			for (var i = 0; i < spans.length; i++) {
+				spans[i].className = "";
+			}
+			spans[xh].className = "v";
+
+			
+		}
+	var currentIndex = 0;
+	function rightBtnClick() {
+		currentIndex = currentIndex + 1;
+		if (currentIndex > spans.length -1) {
+			currentIndex = 0;
+			}
+		
+		changeUI(currentIndex);
+	}
+
+		function leftBtnClick() {
+			currentIndex = currentIndex - 1;
+			if (currentIndex < 0) {
+				currentIndex = spans.length - 1;
+			}
+			changeUI(currentIndex)
+
+			
+		}
+		var r = setInterval(rightBtnClick,2000);
+		var div = document.querySelector("div");
+		div.onmouseover = function () {
+			clearInterval(r);
+		
+		}
+		div.onmouseleave = function () {
+			r = setInterval(rightBtnClick,2000);
+				}
+		
+	
+
+	
+	</script>
+
+</body>
+</html>

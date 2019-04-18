@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jignd</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		.w{
+			width: 230px;
+			height: 305px;
+			border: 1px dashed #000;
+		}
+		.e{
+			width: 198px;
+			height: 65px;
+			
+			margin-top: 20px;
+		}
+		#x{
+			height: 36px;
+			line-height: 18px;
+			font-size: 14px;
+			color: #333;
+			overflow: hidden;
+		}
+		#f{
+			height: 29px;
+			line-height: 29px;
+			color: #e33333;
+			font-size: 14px;
+		}
+		p{
+			margin: 0;
+			text-align: center;
+		}
+		.w{
+			display: flex;
+			flex-flow: column;
+			justify-content: center;
+			align-items: center;
+			position: relative;
+		}
+		.mask{
+			position: absolute;
+			bottom: 0;
+			width: 230px;
+			height: 100px;
+			background-color: rgba(255,255,0.0.8);
+		}
+		.s{
+			width: 60px;
+			height: 60px;
+			background-color: rgba(0,0,0,0.8);
+			color: #fff;
+			font-size: 14px;
+			font-weight: 100;
+			text-align: center;
+			line-height: 60px;
+			border-radius: 50%;
+		}
+		.mask{
+			display: flex;
+			flex-flow: column;
+			justify-content: center;
+			align-items: center;
+			opacity: 0;
+		}
+		img{
+			transition: all 1s;
+		}
+		.w:hover>img{
+			opacity: 0.8;
+		}
+		.mask{
+			transition: all 1s
+			;
+		}
+		.w:hover>.mask{
+			opacity: 1;
+		}
+		.s{
+			transition: all 1s;
+			transform: scale(0);
+		}
+		.w:hover .s{
+			transform: scale(1);
+		}
+		
+		
+	</style>
+</head>
+<body>
+	<div class="w">
+		<img src="https://img11.360buyimg.com/jdcms/s170x170_jfs/t25129/101/473578465/381848/a3095669/5b70fdb3N826e3e1b.jpg!q90!cc_170x170.webp">
+		<div class="e">
+			<p id="x">
+				澳大利亚 进口奶粉 德运 （Devondale）调制乳粉（全脂）成人奶粉 1kg 袋装
+			</p>
+			<p id="f">
+				¥64.90
+			</p>
+		</div>
+		<div class="mask">
+			<div class="s">
+				找相似
+			</div>
+		</div>
+		
+	</div>
+
+</body>
+</html>

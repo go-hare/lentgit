@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+			<p id="q"></p>
+			<hr color=’ff0000’>
+			<button onclick="index()">点击这里</button>
+			<script>
+				var x = "", i = 0;
+				function index() {
+					
+					for (var i = 0; i < 5; i++) {
+						x = x + "青云不会忘记" + "<p>";
+					}
+					document.getElementById("q").innerHTML = x; i++;
+				}
+			</script>
+</body>
+</html>

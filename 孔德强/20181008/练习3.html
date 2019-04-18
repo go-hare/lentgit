@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>dftywad</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		div{
+			width: 750px;
+			height: 291px;
+			border: 1px dashed #000;
+			position: relative;
+		}
+		img{
+			position: absolute;
+			opacity: 0;
+
+		}
+		img:nth-of-type(1){
+			opacity: 1;
+		}
+		p{
+			width: 100%;
+			height: 40px;
+			
+			position: absolute;
+			bottom: 0;
+		}
+		span{
+			display: inline-block;
+			width: 10px;
+			height: 10px;
+			background-color: #0000ff;
+			margin: 8px;
+			border-radius: 50%;
+		}
+		p{
+			display: flex;
+			justify-content: center;
+			
+			align-items: center;
+		}
+		.q{
+			background-color: #ff0000;
+		}
+		img,span{
+			transition: all 1s;
+		}
+		div{
+			position: relative;
+		}
+		.j{
+			position: absolute;
+			top: 115px;
+			left: 10px;
+			width: 30px;
+			height: 60px;
+			opacity: 0.3;
+			border-radius: 10px;
+
+		}
+		.l{
+			position: absolute;
+			top: 115px;
+			right: 975px;
+			width: 30px;
+			height: 60px;
+			opacity: 0.3;
+			border-radius: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<img src="https://gw.alicdn.com/tfs/TB1Dmspd8LoK1RjSZFuXXXn0XXa-750-291.jpg_Q90.jpg">
+		<img src="https://img.alicdn.com/imgextra/i3/749385259/O1CN011oifN6Is0Yk2jMN_!!749385259.jpg_Q90.jpg">
+		<img src="https://img.alicdn.com/tfs/TB11carehjaK1RjSZKzXXXVwXXa-750-291.jpg_Q90.jpg">
+		<img src="https://img.alicdn.com/tfs/TB1vuWEexnaK1RjSZFBXXcW7VXa-750-291.jpg_Q90.jpg">
+		<img src="https://img.alicdn.com/imgextra/i3/2424338511/O1CN012Ck5NTjZRFY81ek_!!2424338511.jpg_Q90.jpg">
+		<img src="https://img.alicdn.com/imgextra/i1/2108418347/O1CN012BWyQDn9sUJTxKk_!!2108418347.jpg_Q90.jpg">
+		<img src="https://img.alicdn.com/tfs/TB1SegbebrpK1RjSZTEXXcWAVXa-750-291.jpg_Q90.jpg">
+		<img src="https://img.alicdn.com/tfs/TB1PZC4d4naK1RjSZFBXXcW7VXa-750-291.jpg_Q90.jpg">
+		<p>
+			<span class="q" onmouseenter="changeUI(0)"></span>
+			<span onmouseenter="changeUI(1)"></span>
+			<span onmouseenter="changeUI(2)"></span>
+			<span onmouseenter="changeUI(3)"></span>
+			<span onmouseenter="changeUI(4)"></span>
+			<span onmouseenter="changeUI(5)"></span>
+			<span onmouseenter="changeUI(6)"></span>
+			<span onmouseenter="changeUI(7)"></span>
+		</p>
+
+	</div>
+	<button class="j" onclick="leftBtnClick()">左</button>
+	<button class="l" onclick="rightBtnClick()">右</button>
+	<script type="text/javascript">
+		var imgs = document.querySelectorAll("img");
+		var spans = document.querySelectorAll("span");
+		function changeUI(xh) {
+			for (var i = 0; i < imgs.length; i++) {
+				imgs[i].style.opacity = "0";
+			}
+			imgs[xh].style.opacity = "1";
+			for (var i = 0; i < spans.length; i++) {
+				spans[i].className = "";
+			}
+			spans[xh].className = "q";
+			currentImdex = xh;
+
+			
+		}
+		var currentIndex = 0;
+		function rightBtnClick() {
+			currentIndex = currentIndex + 1;
+			if (currentIndex > imgs.length - 1) {
+				currentIndex = 0;
+
+			}
+			changeUI(currentIndex);
+			
+		}
+		function leftBtnClick() {
+			currentIndex = currentIndex - 1;
+			if (currentIndex < 0) {
+				currentIndex = imgs.length - 1;
+			}
+			changeUI(currentIndex);
+			
+		}
+		var w = setInterval(rightBtnClick,1000);
+		var div = document.querySelector("div");
+		div.onmouseenter = function(){
+			clearInterval(w);
+		}
+		div.onmouseenter = function(){
+			intervalId = setInterval(rightBtnClick,1000);
+		}
+		
+		
+		
+		
+
+
+			
+	</script>
+
+</body>
+</html>

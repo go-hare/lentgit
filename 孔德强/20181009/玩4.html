@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>苏宁</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		.a{
+			width: 160px;
+			height: 240px;
+			border-left: 20px dashed #fff;
+			border-right: 20px dashed #fff;
+			overflow: hidden;
+
+		}
+		.s{
+			width: 480px;
+			height: 240px;
+			background-color: #ddd;
+		}
+		.d{
+			width: 160px;
+			height: 240px;
+		}
+		img{
+			width: 160px;
+			height: 200px;
+		}
+		h1{
+			height: 23px;
+			line-height: 20px;
+			font-size: 15px;
+			margin: 0;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+		}
+		p{
+			height: 10px;
+			line-height: 10px;
+			margin: 0;
+			color: #ff0000;
+		}
+		.d{
+			float: left;
+		}
+		.q{
+			width: 160px;
+			height: 25px;
+			background-color: #fff;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			
+		}
+		span{
+			display: inline-block;
+			width: 15px;
+			height: 15px;
+			background-color: #000;
+			border-radius: 50%;
+			margin: 8px;
+		}
+		.w{
+			background-color: #fff;
+		}
+		.s,span{
+			transition: all 1s;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="a">
+		<div class="s">
+			<div class="d">
+				<img src="https://imgservice.suning.cn/uimg1/b2c/image/x0zuYlPZo7ZOEllyhG_d5g.jpg?format=400h_400w_4e_80q">
+				<h1>【三只松鼠_牛肉牛肉片100gx1袋】threesquirrels袋装零食小吃手撕牛肉干香辣味</h1>
+				<p>$37.80</p>
+			</div>
+			<div class="d">
+				<img src="https://imgservice.suning.cn/uimg1/b2c/image/yKhh_tjwb8beONJPDP6fKA==.jpg?format=400h_400w_4e_80q">
+				<h1>光明 莫斯利安 酸奶 常温酸牛奶 原味酸奶 200g*6盒*4组（量贩装）</h1>
+				<p>$80.00</p>
+			</div>
+			<div class="d">
+				<img src="https://imgservice.suning.cn/uimg1/b2c/image/ga9nTas_gfoNle2t0vexfQ==.jpg?format=400h_400w_4e_80q">
+				<h1>展卉 广西百香果 盒装12个装 单果50-80g 冷藏国产浆果类/核果类新鲜水果</h1>
+				<p>$50.00</p>
+			</div>
+		</div>
+	</div>
+	<div class="q">
+		<span class="w"></span>
+		<span></span>
+		<span></span>
+	</div>
+	<script type="text/javascript">
+		var sDiv = document.querySelector(".s");
+		var span1 = document.querySelector("span:nth-of-type(1)");
+		var span2 = document.querySelector("span:nth-of-type(2)");
+		var span3 = document.querySelector("span:nth-of-type(3)");
+		function aD() {
+			sDiv.style.transform = "translateX(-160px)";
+			span1.className = "";
+			span2.className = "";
+			span3.className = "";
+			span2.className = "w";
+		}
+		span2.onmouseover = aD;
+		function asD() {
+			sDiv.style.transform = "translateX(-320px)";
+			span1.className = "";
+			span2.className = "";
+			span3.className = "";
+			span3.className = "w";
+		}
+		span3.onmouseover = asD;
+		function adD() {
+			sDiv.style.transform = "translateX(0px)";
+			span1.className = "";
+			span2.className = "";
+			span3.className = "";
+			span1.className = "w";
+		}
+		span1.onmouseover = adD;
+
+	</script>
+
+</body>
+</html>

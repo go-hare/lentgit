@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>shuy</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		div{
+			width: 520px;
+			height: 280px;
+			border: 1px dashed #000;
+			position: relative;
+		}
+		img{
+			position: absolute;
+			opacity: 0;
+		}
+		img:nth-of-type(1){
+			opacity: 1;
+		}
+		p{
+			width: 100%;
+			height: 40px;
+			
+			position: absolute;
+			bottom: 0;
+		}
+		span{
+			display: inline-block;
+			width: 10px;
+			height: 10px;
+			background-color: #0000ff;
+			border-radius: 50%;
+			margin: 8px;
+
+		}
+		p{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.q{
+			background-color: #ff0000;
+		}
+		img,span{
+			transition: all 1s;
+		}
+		.div{
+			position: relative;
+		}
+		.h{
+			width: 30px;
+			height: 80px;
+			position: absolute;
+			top: 100px;
+			left: 9px;
+			opacity: 0.2;
+			border-radius: 9px;
+		}
+		.j{
+			width: 30px;
+			height: 80px;
+			position: absolute;
+			top: 100px;
+			right: 1205px;
+			opacity: 0.2;
+			border-radius: 0px;
+		}
+
+	</style>
+</head>
+<body>
+	<div>
+		<img src="https://img.alicdn.com/tfs/TB1ndtJdhjaK1RjSZFAXXbdLFXa-520-280.jpg_q90_.webp">
+		<img src="https://img.alicdn.com/simba/img/TB1jgoWv8jTBKNjSZFwSuwG4XXa.jpg">
+		<img src="https://aecpm.alicdn.com/tps/i1/TB1r4h8JXXXXXXoXXXXvKyzTVXX-520-280.jpg">
+		<img src="https://aecpm.alicdn.com/tps/i2/TB10vPXKpXXXXacXXXXvKyzTVXX-520-280.jpg">
+		<img src="https://img.alicdn.com/tfs/TB18Z3gdVzqK1RjSZFvXXcB7VXa-520-280.jpg_q90_.webp">
+		<p>
+			<span class="q" onmouseover="changeUI(0)"></span>
+			<span onmouseover="changeUI(1)"></span>
+			<span onmouseover="changeUI(2)"></span>
+			<span onmouseover="changeUI(3)"></span>
+			<span onmouseover="changeUI(4)"></span>
+		</p>
+	</div>
+	<button class="h" onclick="leftBtnClick()">左</button>
+	<button class="j" onclick="rightBtnClick()">右</button>
+
+	<script type="text/javascript">
+		var imgs = document.querySelectorAll("img");
+		var spans = document.querySelectorAll("span");
+		function changeUI(xh) {
+			for (var i = 0; i < imgs.length; i++) {
+				imgs[i].style.opacity = "0";
+			}
+			imgs[xh].style.opacity = "1";
+			for (var i = 0; i < spans.length; i++) {
+				spans[i].className = "";
+			}
+				spans[xh].className = "q";
+				currentIndex = xh;
+			}
+			var currentIndex = 0;
+			function rightBtnClick() {
+				currentIndex = currentIndex + 1;
+				if (currentIndex > imgs.length - 1) {
+					currentIndex = 0;
+
+
+				}
+				changeUI(currentIndex);
+				
+			}
+			function leftBtnClick() {
+				currentIndex = currentIndex - 1;
+				if (currentIndex < 0) {
+					currentIndex = imgs.length - 1;
+				}
+				changeUI(currentIndex);
+
+				
+			}
+			var d = setInterval(rightBtnClick,800);
+			var div = document.querySelector("div");
+			div.onmouseover = function () {
+				clearInterval(d);
+			
+			}	
+			div.onmouseover = function () {
+				d = setInterval(rightBtnClick,800);
+				
+			}
+			
+		
+
+
+			
+	
+	</script>
+
+</body>
+</html>

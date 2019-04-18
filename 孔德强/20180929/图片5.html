@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>广告法</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		.w{
+			width: 230px;
+			height: 305px;
+			border: 1px dashed #993333;
+		}
+		.e{
+			width: 195px;
+			height: 65px;
+			
+			margin-top: 20px;
+		}
+		#x{
+			height: 36px;
+			font-size: 14px;
+			line-height: 18px;
+			overflow: hidden;
+			color: #333;
+		}
+		#z{
+			font-size: 14px;
+			height: 29px;
+			line-height: 29px;
+			color: #e33333;
+		}
+		p{
+			margin: 0;
+			text-align: center;
+
+		}
+		.w{
+			display: flex;
+			flex-flow: column;
+			justify-content: center;
+			align-items: center;
+			position: relative;
+		}
+		.mask{
+			position: absolute;
+			bottom: 0;
+			width: 230px;
+			height: 100px;
+			background-color: rgba(255,255,0,0.8);
+		}
+		.r{
+			width: 60px;
+			height: 60px;
+			background-color: rgba(0,0,0,0.8);
+			color: #fff;
+			font-size: 12px;
+			font-weight: 100;
+			text-align: center;
+			line-height: 60px;
+			border-radius: 50%;
+
+		}
+		.mask{
+			display: flex;
+			flex-flow: column;
+			justify-content: center;
+			align-items: center;
+			opacity: 0;
+		}
+		img{
+			transition: all 1s;
+		}
+		.w:hover>img{
+			opacity: 0.8;
+		}
+		.mask{
+			transition: all 1s;
+
+		}
+		.w:hover>.mask{
+			opacity: 1;
+		}
+		.r{
+			transition: all 1s;
+			transform: scale(0);
+		}
+		.w:hover .r{
+			transform: scale(1);
+		}
+
+
+	</style>
+</head>
+<body>
+	<div class="w">
+		<img src="https://img11.360buyimg.com/jdcms/s170x170_jfs/t595/197/509204436/102860/1bd3c1b/546e9e81N8f2d62eb.jpg!q90!cc_170x170.webp">
+		<div class="e">
+			<p id="x">
+				完美芦荟胶40g 3支装
+			</p>
+			<p id="z">
+				¥88.00
+			</p>
+		</div>
+		<div class="mask">
+			<p class="r">
+				找相似
+				
+			</p>
+		</div>
+		
+	</div>
+
+</body>
+</html>

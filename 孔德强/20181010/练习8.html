@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ghk</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+	.a{
+		width: 170px;
+		height: 305px;
+		border-right: 30px dashed #fff;
+		border-left: 30px dashed #fff;
+		overflow: hidden;
+		position: relative;
+	}
+	.s{
+		width: 510px;
+		height: 305px;
+		background-color: #fff;
+	}
+	.d{
+		width: 170px;
+		height: 305px;
+	}
+	h1{
+		font-size: 14px;
+		text-align: center;
+		color: #333;
+		font-weight: 200;
+	}
+	p{
+		height: 20px;
+		line-height: 20px;
+		font-size: 22	px;
+		color: #ee0039;
+		text-align: center;
+	}
+	.d{
+		float: left;
+	}
+	.r{
+		width: 230px;
+		height: 30px;
+		background-color: #fff;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+	}
+	span{
+		display: inline-block;
+		width: 20px;
+		height: 20px;
+		background-color: #000;
+		border-radius: 50%;
+		margin: 9px;
+	}
+	.t{
+		background-color: #ee0039;
+	}
+	.p{
+		width: 30px;
+		height: 55px;
+		position: absolute;
+		top: 125px;
+		left: 9px;
+		opacity: 0.4;
+		border-radius: 12px;
+
+	}
+	.l{
+		width: 30px;
+		height: 55px;
+		position: absolute;
+		top: 125px;
+		left: 176px;
+		opacity: 0.4;
+		border-radius: 12px;
+
+	}
+
+		
+	</style>
+</head>
+<body>
+	<div class="a">
+		<div class="s">
+			<div class="d">
+				<img src="https://img12.360buyimg.com/jdcms/s170x170_jfs/t2146/90/2096274276/2879845/42b3fb3a/56f0a805N7bad2871.jpg!q90!cc_170x170.webp">
+				<h1>免驱版 USB无线网卡 笔记本台式机通用随身wifi接收器  外置天线 智能安装</h1>
+				<p>$50.00</p>
+			</div>
+			<div class="d">
+				<img src="https://img11.360buyimg.com/jdcms/s170x170_jfs/t478/153/886206867/83918/24d11d17/54b8ae03N63a25d6c.jpg!q90!cc_170x170.webp">
+				<h1>360随身WiFi3 300M 无线网卡 迷你路由器 黑色</h1>
+				<p>$24.90</p>
+			</div>
+			<div class="d">
+				<img src="https://img12.360buyimg.com/jdcms/s170x170_jfs/t6988/230/2460538336/217600/5780db72/598c0987N4da32f09.jpg!q90!cc_170x170.webp">
+				<h1>胜为（shengwei）六类网线 cat6类纯铜千兆 2米 黑色 高速成品电脑网络连接跳线 LC-6020G</h1>
+				<p>$12.90</p>
+			</div>
+		</div>
+	</div>
+	<div class="r">
+		<span class="t" onmouseover="changeUI(0)"></span>
+		<span onmouseover="changeUI(1)"></span>
+		<span onmouseover="changeUI(2)"></span>
+	</div>
+	<button class="l" onclick="rightBtnClick()">右</button>
+	<button class="p" onclick="leftBtnClick()">左</button>
+	<script type="text/javascript">
+		var sDiv = document.querySelector(".s");
+		var spans = document.querySelectorAll("span");
+		function changeUI(xh) {
+			sDiv.style.transform = "translateX(-" + xh * 170 + "px)";
+			for (var i = 0; i < spans.length; i++) {
+				spans[i].className = "";
+
+			}
+			spans[xh].className = "t";
+			
+		}
+		var currentIdex = 0;
+		function rightBtnClick() {
+			currentIdex = currentIdex + 1;
+			if (currentIdex > spans.length - 1) {
+				currentIdex = 0;
+			}
+			changeUI(currentIdex);
+			
+		}
+		function leftBtnClick(xh) {
+			currentIdex = currentIdex - 1;
+			if (currentIdex < 0) {
+				currentIdex = spans.length - 1;
+			}
+			changeUI(currentIdex);
+			
+		}
+		var setInterval(rightBtnClick,100);
+		var div = document.querySelector("div");
+		div.onmouseenter = function () {
+			clear
+		
+		}
+	</script>
+
+
+</body>
+</html>

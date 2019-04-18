@@ -1,0 +1,256 @@
+.quan{
+	width: 278px;
+	height: 136px;
+	border: 1px dashed transparent;
+	background-color: #fff;
+	opacity: 0.3;
+	position: absolute;
+	top: 100px;
+	left: 470px;
+}	
+.quan1{
+	margin: 20px 20px 0;
+	font-size: 1.125em;
+	line-height: 2.5em;
+	color: #555;
+}
+.quan2{
+	margin: 0 20px;
+	font-size: 0.75em;
+	color: #555;
+}
+a1{
+	margin: 20px 20px 0;
+	font-size: 1.125em;
+	line-height: 2.5em;
+	color: #555;
+
+}
+.quan3{
+	width: 710px;
+	height: 142px;
+	/*border: 1px dashed #ddd;*/
+	position: absolute;
+	top: 100px;
+	right: 450px;
+	}
+	.quan4{
+		width: 704px;
+		height: 136px;
+		/*border: 1px dashed #000;
+		background-color: #ddd;*/
+	}
+	.quan4>span{
+		display: inline-block;
+		font-size: 0.75em;
+		padding: 30px;
+		line-height: 2em;	
+		color: white;
+		opacity: 0.75;
+	}
+	.quant1{
+		width: 1030px;
+		height: 284px;
+		border: 1px dashed transparent;
+		/*background-color: #ddd;*/
+
+		position: absolute;
+		top: 360px;
+		left: 470px;
+		padding: 3px;
+		position: relative;
+
+
+	}
+	.quant2{
+		width: 136px;
+		height: 136px;
+		border: 1px dashed transparent;
+		background-color: #ff9142;
+		color: #fef8ec;
+		position: absolute;
+		margin-bottom: 8px;
+		transition: all 1s;
+	
+	}
+	.quant2:hover{
+		transform: scale(1.1);
+	}
+	.quant3{
+		width: 96px;
+		height: 30px;
+		padding: 20px 20px 0;
+		
+	}
+	.quant4{
+		width: 96px;
+		height: 28px;
+		font-size: 2px;
+		margin: 0 20px;
+		text-transform: uppercase;
+		
+	}
+	.w2{
+		width: 16px;
+		height: 16px;
+		padding-right: 20px;
+		padding-bottom: 20px;
+		position: absolute;
+		right: 0;
+		bottom: 0;
+	}
+	.quant12{
+		
+		width: 136px;
+		height: 136px;
+		border: 1px dashed transparent;
+		background-color: #0c92d1;
+		color: #fef8ec;
+		position: absolute;
+		left: 3;
+		top: 150px;
+		margin-bottom: 8px;
+		transition: all 1s;
+	
+	}
+	.quant12:hover{
+		transform: scale(1.1);
+	}
+	.quant22{
+		position: absolute;
+		top: 5px;
+		left: 150px;
+	}
+	.quant23{
+		position: absolute;
+		top: 150px;
+		left: 150px;
+	}
+	.quant13{
+		position: absolute;
+		top: 5px;
+		left: 300px;
+		width: 136px;
+		height: 136px;
+		border: 1px dashed transparent;
+		background-color: #a0d468;
+		color: #fef8ec;
+		
+		margin-bottom: 8px;
+		transition: all 1s;
+	}
+	.quant13:hover{
+		transform: scale(1.1);
+	}
+	.quant14{
+		position: absolute;
+		top: 150px;
+		left: 300px;
+		width: 136px;
+		height: 136px;
+		border: 1px dashed transparent;
+		background-color: #d870ad;
+		color: #fef8ec;
+		
+		margin-bottom: 8px;
+		transition: all 1s;
+	}
+	.quant14:hover{
+		transform: scale(1.1);
+	}
+	.quant24{
+		position: absolute;
+		top: 150px;
+		left: 450px;
+	}
+	.quant15{
+		position: absolute;
+		top: 5px;
+		left: 450px;
+		width: 136px;
+		height: 136px;
+		border: 1px dashed transparent;
+		background-color: #22b658;
+		color: #fef8ec;
+		
+		margin-bottom: 8px;
+		transition: all 1s;
+	}
+	.quant15:hover{
+		transform: scale(1.1);
+	}
+	.quant24{
+		position: absolute;
+		top: 150px;
+		left: 450px;
+	}
+	.quant25{
+		position: absolute;
+		top: 5px;
+		left: 600px;
+	}
+	.quant16{
+		position: absolute;
+		top: 150px;
+		left: 600px;
+		width: 136px;
+		height: 136px;
+		border: 1px dashed transparent;
+		background-color: #37bd9c;
+		color: #fef8ec;
+		
+		margin-bottom: 8px;
+		transition: all 1s;
+	}
+	.quant16:hover{
+		transform: scale(1.1);
+	}
+	.quant17{
+		position: absolute;
+		top: 5px;
+		left: 750px;
+		width: 136px;
+		height: 136px;
+		border: 1px dashed transparent;
+		background-color: #f6bb43;
+		color: #fef8ec;
+		
+		margin-bottom: 8px;
+		transition: all 1s;
+	}
+	.quant17:hover{
+		transform: scale(1.1);
+	}
+	.quant18{
+		position: absolute;
+		top: 150px;
+		left: 750px;
+		width: 136px;
+		height: 136px;
+		border: 1px dashed transparent;
+		background-color: #3baeda;
+		color: #fef8ec;
+		
+		margin-bottom: 8px;
+		transition: all 1s;
+	}
+	.quant18:hover{
+		transform: scale(1.1);
+	}
+	.quant26{
+		position: absolute;
+		top: 5px;
+		right: 0;
+	}
+	.quant27{
+		width: 136px;
+		height: 136px;
+		background-color: #967bdc;
+		position: absolute;
+		bottom: 0;
+		right: 0;
+	}
+
+	
+	
+	

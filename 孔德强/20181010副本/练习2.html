@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>京东</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		.a{
+			width: 170px;
+			height: 305px;
+			border-left: 30px dashed #fff;
+			border-right: 30px dashed #fff;
+			overflow: hidden;
+		}
+		.s{
+			width: 680px;
+			height: 305px;
+			background-color: #fff;
+		}
+		.d{
+			width: 170px;
+			height: 302px;
+		}
+		h1{
+			font-size: 14px;
+			height: 40px;
+			line-height: 20px;
+			overflow: hidden;
+		}
+		p{
+			font-size: 18px;
+			color: #ee0039;
+			line-height: 20px;
+			height: 20px;
+			text-align: center;
+		}
+		.d{
+			float: left;
+		}
+		.v{
+			width: 230px;
+			height: 30px;
+				background-color: #fff;
+
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		
+		}
+		span{
+			display: inline-block;
+			width: 10px;
+			height: 10px;
+			background-color: #00ee00;
+			margin: 8px;
+			border-radius: 50%;
+
+		}
+		.c{
+			background-color: #ee0039;
+		}
+		
+		
+
+		
+	</style>
+</head>
+<body>
+	<div class="a">
+		<div class="s">
+			<div class="d">
+				<img src="https://img13.360buyimg.com/jdcms/s170x170_jfs/t3427/221/1828863550/93027/757e93ac/5832861fN2566f854.jpg!q90!cc_170x170.webp">
+				<h1>TP-LINK TL-WDR5620 1200M 5G双频智能无线路由器 四天线智能wifi 稳定穿墙高速家用路由器</h1>
+				<p>$500.00</p>
+			</div>
+			<div class="d">
+				<img src="https://img11.360buyimg.com/jdcms/s170x170_jfs/t1/5253/16/6601/111273/5ba35a35E046a35ed/bfbad8ca9daac216.jpg!q90!cc_170x170.webp">
+				<h1>满199减120三只松鼠 夏威夷果160g 零食坚果炒货每日坚果干果休闲零食办公室奶油味送开口器 160g</h1>
+				<p>$50.00</p>
+			</div>
+			<div class="d">
+				<img src="https://img12.360buyimg.com/jdcms/s170x170_jfs/t19339/55/759661382/91186/a32036b9/5aa77e11Na27afa82.jpg!q90!cc_170x170.webp">
+				<h1>蒙牛 特仑苏 纯牛奶 250ml*16 礼盒装</h1>
+				<p>$40.00</p>
+			</div>
+			<div class="d">
+				<img src="https://img14.360buyimg.com/jdcms/s170x170_jfs/t23128/362/2012598249/139510/885b72e6/5b70e0f8N7b7da2ac.jpg!q90!cc_170x170.webp">
+				<h1>三只松鼠坚果炒货零食每日坚果手剥开口松子100g/袋</h1>
+				<p>$49.00</p>
+			</div>
+		</div>
+	</div>
+	<div class="v">
+		<span class= "c" onmouseover="changeUI(0)"></span>
+		<span onmouseover="changeUI(1)"></span>
+		<span onmouseover="changeUI(2)"></span>
+		<span onmouseover="changeUI(3)"></span>
+	</div>
+	<button onclick="leftBtnClick()">左</button>
+	<button onclick="rightBtnClick()">右</button>
+	<script type="text/javascript">
+	var sDiv = document.querySelector(".s");
+	var spans = document.querySelectorAll("span");
+	function changeUI(xh) {
+		sDiv.style.transform = "translateX(-" + xh * 170 + "px)";
+		for (var i = 0; i < spans.length; i++) {
+	 			spans[i].className = "";
+	 		}
+
+		
+		
+		spans[xh].className = "v";
+		
+	}
+	var currentIndex = 0;
+	function leftBtnClick() {
+		currentIndex = currentIndex - 1;
+		if (currentIndex < 0) {
+			currentIndex = spans.length - 1;
+		}
+		changeUI(currentIndex);
+		
+	}
+	function rightBtnClick() {
+		currentIndex = currentIndex + 1;
+		if (currentIndex > spans.length - 1) {
+			currentIndex = 0;
+		}
+		changeUI(currentIndex);
+		
+	}
+	var k = setInterval(rightBtnClick,2000);
+	var div = document.querySelector("div");
+	div.onmouseover  = function () {
+		clearInterval(k);
+
+
+		
+	}
+	div.onmouseover = function () {
+		k = setInterval(rightBtnClick,2000);
+	
+	}
+	</script>
+
+</body>
+</html>
